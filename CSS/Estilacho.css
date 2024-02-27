@@ -59,3 +59,42 @@ select #python{    background-color:  black;
     }
 
 
+p::after{
+    content: "- P -";
+    background-color: yellow;
+    color: black;
+}
+h2::after{
+    content: "- H2 -";
+    background-color: yellow;
+    color: black;
+}
+h1::after{
+    content: "- H1 -";
+    background-color: yellow;
+    color: black;
+}
+ol::after{
+    content:  "- ol -";
+    background-color: yellow;
+    color: black;
+}
+li::after{
+    content:  "- li -";
+    background-color: yellow;
+    color: black;
+}
+
+body::after{
+    content:  "- body -";
+    background-color: yellow;
+    color: black;
+}
+
+body::before{
+    content:  "- body -";
+    background-color: yellow;
+    color: black;
+}
+
+
