@@ -1,0 +1,25 @@
+ol li{
+    color: aqua;
+    background-color: aliceblue;
+}
+
+ol{
+    #elemento-1{
+        color: brown;
+        background-color: chartreuse;
+    }
+}
+
+ul h2 {
+    color: red;
+    background-color: cadetblue;
+}
+
+
+body{
+    background-image: url(https://wallpapercave.com/wp/wp10371465.jpg);
+    background-size:cover;
+    /* background: linear-gradient(red, blue, green, yellow); */
+    
+}
+

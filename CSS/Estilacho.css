@@ -1,0 +1,61 @@
+body{
+    background:radial-gradient(black,purple,green)
+}
+
+h1{
+    background-color: black;
+    color: purple;
+}
+
+h2{
+    background-color: black;
+    color: purple;
+}
+p{
+    background-color: black;
+    color: green;
+}
+
+select{
+background-color: black
+color(purple);
+}
+
+
+select #api{    background-color:  black;
+color: red;}
+
+select #sql{    background-color:  black;
+    color: purple;}
+
+select #bash{    background-color:  black;
+    color: white;}
+
+select #java{    background-color:  black;
+    color: cyan;}
+
+select #python{    background-color:  black;
+    color: yellow;}
+
+    .artistate{
+        color: yellow;
+        background-color: black;
+    }
+    .pop{
+        color: green;
+        background-color: black;
+    }
+    .alt-rock{
+        color: red;
+        background-color: black;
+    }
+    .nu-metal{
+        color: cyan;
+        background-color: black;
+    }
+    .pop-punk{
+        color: grey;
+        background-color: black;
+    }
+
+
