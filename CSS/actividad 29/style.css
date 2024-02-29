@@ -1,0 +1,255 @@
+/* Selector de HTML */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    background-color: rgba(246, 187, 165, 0.757);
+    list-style: circle;
+}
+
+body{
+    width: 100%;
+    /* height: 100vh; */
+    /* top = arriba, bottom = abajo, right = derecha, left = izquierda */
+    background: linear-gradient(to bottom right, black, rgb(147, 96, 0));
+    /* background: radial-gradient( orange, rgb(6, 182, 27),black); */
+    /* background: conic-gradient(blue, orange, blue); */
+    background-repeat: no-repeat;
+}
+
+
+/* Selector de clase */
+.grupoLI{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+/* Selector de ID */
+#elemento-1{
+    color: blue;
+}
+
+#elemento-2{
+    color: green;
+}
+
+
+#elemento-3{
+    color: red;
+}
+
+#elemento-4{
+    color: yellow;
+}
+
+#elemento-5{
+    color: purple;
+}
+
+#elemento-6{
+    color: rgb(115, 0, 0);
+}
+
+
+
+
+/* 
+    Realiza una pagina web que contenga lo siguiente::after
+
+    Titulo (Nombre y Apellido)
+    Imagen (Un logo personal / Foto personal)
+    Parrafo (Breve resumen personal)
+
+    Lista desplegable con al menos 5 lenguajes o tecnologias que te gustaria aprender
+    Lista ordenada de tus 4 artistas favoritos (ol)
+
+
+    En cuanto a estilos, debe contener una imagen o degradado de fondo (el body)
+    cada elemento de la lista debe tener estilos propios (id) y compartidos (class)
+    La imagen debe tener un ancho de 500px (no importa el alto)
+*/
+
+
+
+
+
+
+/* 
+    Propiedades CSS para textos
+    
+    -text-align permite alinear el texto, 
+    los valores admitidos son: center, left, start, right, end, justify
+    
+    - font-size permite cambiar el tamaño de la fuente, 
+    los valores admitidos son: px, em, rem, %
+    
+    - font-weight permite cambiar el grosor de la fuente, 
+    los valores admitidos son: lighter, normal, bold, bolder, 100, 200, 300, 400, 500, 600, 700, 800, 900
+    
+    - font-style permite cambiar el estilo de la fuente, 
+    los valores admitidos son: normal, italic
+    
+    - font-family permite cambiar el tipo de fuente, 
+    los valores admitidos son: Arial, Verdana, sans-serif, monospace, cursive, fantasy, serif, etc...
+*/
+
+
+#miTitulo{
+    color: #ffbafe;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    font-style: italic;
+    font-family: Verdana
+}
+
+
+#parrafo_1{
+    color: skyblue;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: Arial;
+}
+
+
+#parrafo_2{
+    color: greenyellow;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 900;
+    font-family: Arvo;
+}
+
+
+#parrafo_3{
+    color:rgb(255, 137, 241);
+    text-align: end;
+    font-size: 15px;
+    font-style: italic;
+    font-family: Consolas;
+}
+
+
+/* 
+    Posicionamiento de elementos en CSS (display y flex)
+
+    - display permite cambiar el tipo de visualizacion de un elemento, 
+    los valores admitidos son: block, none, flex, grid.
+    
+    Cuando un elemento es flex, significa que es un elemento flexible, 
+    por defecto estos elementos se muestran como una fila (row), es decir en el eje x.
+    Los elementos flexibles se pueden trabajar con las propiedades justify-content y align-items.
+
+    - justify-content permite alinear los elementos en el eje principal de una alineacion, 
+    Es decir, si los elementos estan en una fila justify-content alinea los elementos en el eje x,
+    si los elementos estan en una columna, justify-content alinea los elementos en el eje y,
+    los valores admitidos son: flex-start, flex-end, center, start, end, space-between, space-around, space-evenly.
+    
+    - align-items permite alinear los elementos en el eje secundario de una alineacion, 
+    si los elementos estan en una fila align-items alinea los elementos en el eje y,
+    si los elementos estan en una columna, align-items alinea los elementos en el eje x,
+    los valores admitidos son: center, start, end.
+
+    - flex-direction permite cambiar la direccion de los elementos,
+    los valores admitidos son: row, row-reverse, column, column-reverse.
+*/
+
+
+#sectionDisplay{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(95, 158, 160, 0.425);
+}
+
+#caja-1{
+    width: 250px;
+    height: 50px;
+    background-color: rgb(242, 255, 0);
+}
+
+#caja-2{
+    width: 250px;
+    height: 50px;
+    background-color: rgb(47, 0, 255);
+}
+
+#caja-3{
+    width: 250px;
+    height: 50px;
+    background-color: rgb(255, 0, 0);
+}
+
+
+
+/* 
+    Ejercicio para realizar en casa:
+
+    Reordena los elementos usando width, display, flex-direction, justify-content y align-items
+    para que se muestren como los elementos de arriba.
+
+    NOTA: SIN MODIFICAR EL HTML
+*/
+
+
+/* #sectionDisplay2{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(147, 160, 148, 0.646);
+} */
+
+/* #caja-A{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(242, 255, 0);
+}
+
+#caja-B{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(47, 0, 255);
+}
+
+#caja-C{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 0, 0);
+} */
+
+#sectionDisplay2{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(95, 158, 160, 0.425);
+}
+
+
+#caja-A{
+    width: 250px;
+    height: 50px;
+    background-color: rgb(242, 255, 0);
+}
+
+#caja-B{
+    width: 250px;
+    height: 50px;
+    background-color: rgb(47, 0, 255);
+}
+
+#caja-C{
+    width: 250px;
+    height: 50px;
+    background-color: rgb(255, 0, 0);
+}
