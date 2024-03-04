@@ -1,5 +1,7 @@
 /* Selector de HTML */
 
+
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -252,4 +254,33 @@ body{
     width: 250px;
     height: 50px;
     background-color: rgb(255, 0, 0);
+}
+
+
+#sectionDisplay3{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(114, 250, 121);
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+#caja-1A{
+    width: 100px;
+    height: 100px;
+    margin:  10px 0px 25px 40px;
+    padding: 5px 3px;
+    border-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: slategrey;
+}
+
+#caja-1A button{
+    color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    font-family: "Kode Mono", monospace;
+    background-color: slategrey;
 }
