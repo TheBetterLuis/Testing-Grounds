@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0vw;
+  padding: 0vw;
+}
+
+body {
+  width: 90vw;
+  margin: 5vw;
+  padding: 5vw;
+  background-image: linear-gradient(to right, #45C270, #21CDC3);
+}
+
+.profile {
+  padding: 1vh;
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  margin: 5vw;
+  padding: 5vw;
+  background-image: linear-gradient(to right, #403F44, #1E1B32);
+}
+.nav a {
+  padding: 2vw;
+  color: white;
+  background-color: gray;
+  font-size: 1.3em;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
