@@ -41,3 +41,22 @@ $breakpoints: (
     @content;
   }
 }
+
+.responsive-test {
+  @include xs {
+    font-size: x-small;
+  }
+  @include sm {
+    font-size: small;
+  }
+  @include md {
+    font-size: medium;
+  }
+  @include lg {
+    font-size: large;
+  }
+  @include xl {
+    font-size: x-large;
+  }
+  
+}
