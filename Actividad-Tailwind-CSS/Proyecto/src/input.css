@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "Fixedsys";
+  src: url(../assets/fonts/fixedsys-2-monospaced.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "amazon";
+  src: url(../assets/fonts/AmazonEmber_Rg.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "amazonitalic";
+  src: url(../assets/fonts/AmazonEmber_RgIt.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "amazonbold";
+  src: url(../assets/fonts/AmazonEmber_Bd.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "amazonbolditalic";
+  src: url(../assets/fonts/AmazonEmber_BdIt.ttf) format("truetype");
+}
+
+.nav-a {
+  margin: 5px 0 6px 0;
+  padding: 8px 9px;
+}
+
+.backtotop {
+  /* margin: 5px 0 6px 0; */
+  padding: 8px 9px;
+}
+
+select {
+  direction: rtl;
+}
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.navbartag {
+  @apply flex justify-between bg-amazonnav;
+}
+
+.navlefttag {
+  @apply flex space-x-2 text-white;
+}
+
+.logotag {
+  @apply mt-0 mr-0 mb-0 ml-[11px] pt-[4px] px-0 pb-0 pl-[6px] flex flex-col justify-center;
+}
+
+.imginsidelogo {
+  @apply m-[1px] pt-[1px] pr-[8px] pb-0 pl-[6px];
+}
+
+.delivertotag {
+  @apply my-0 mx-[10px] pt-[10px] pr-[4px] pb-[10px] pl-[3px] flex space-x-2;
+}
+
+.imgdeliverto {
+  @apply mt-[8px] mx-0 mb-0 flex flex-col justify-center;
+}
+
+.delivertotext {
+  @apply flex flex-col justify-center;
+}
+
+.navfilltag {
+  @apply flex flex-col justify-center w-4/6;
+}
+
+.searchdiv {
+  @apply my-0 mx-[18px] pt-[10px] pr-[4px] pb-[10px] pl-[3px] flex;
+}
+
+.searchlefttag {
+  @apply p-0 pr-0 pb-0 pl-[5px] bg-[#e6e6e6] text-[#0f1111] rounded-l flex flex-col justify-center;
+}
+
+.searchmiddleinput {
+  @apply w-full placeholder:font-amazonitalic has-[:focus]:outline-none has-[:focus]:outline-amazonorange has-[:focus]:outline-4 pt-[7px] pr-[10px] pb-[10px] pl-2;
+}

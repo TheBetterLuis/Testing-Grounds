@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class=" text-black ">
+
+
+<div class="p-4 flex flex-col justify-center">
+
+ <div>
+
+    <input type="checkbox" name="checkboxxx" id="primero" class=" peer  checked:hidden">
+
+    <label for="" class=" hidden peer-checked:inline-block">primero</label>
+
+</div>
+<div>
+    <input type="checkbox" name="checkboxxx" id="segundo" class="m-1 peer checked:hidden"> 
+    
+    <select name="#optionselect" id="" class="hidden   bg-[#e6e6e6] flex mt-0 mr-[10px] mb-0 ml-[5px] peer-checked:inline-block">
+        <option  class="">All</option>
+        <option  class="">All Departments</option>
+        <option  class="">Arts & Crafts</option>
+        <option  class="">Baby</option>
+        <option  class="">Beauty & Personal Care</option>
+        <option  class="">Books</option>
+        <option  class="">Boy's Fashion</option>
+        <option  class="">Computers</option>
+        <option  class="">Deals</option>
+        <option  class="">Digital Music</option>
+        <option  class="">Electronics</option>
+        <option  class="">Girl's Fashion</option>
+        <option  class="">Health & Household</option>
+        <option  class="">Home & Kitchen</option>
+        <option  class="">Industrial & Scientific</option>
+        <option  class="">Kindle Store</option>
+        <option  class="">Luggage</option>
+        <option  class="">Men's Fashion</option>
+        <option  class="">Movies & TV</option>
+        <option  class="">Home & Kitchen</option>
+        <option  class="">Music, CDs & Vinyl</option>
+        <option  class="">Pet Supplies</option>
+        <option  class="">Prime Video</option>
+        <option  class="">Software</option>
+        <option  class="">Sports & Outdoors</option>
+        <option  class="">Tools & Home Improvement</option>
+        <option  class="">Toys & Games</option>
+        <option  class="">Video Games</option>
+        <option  class="">Women's Fashion</option>
+    </select> 
+</div>
+<div>
+    <input type="checkbox" name="checkboxxx" id="tercero" class=" m-1"> <label for="">tercero</label>
+</div>
+
+</div>
+</body>
+</html>
