@@ -1,0 +1,20 @@
+//custom variables here, check variables file in node modules/scss/
+$primary: #c29938;
+$light: #fbf5e5;
+
+//import the functions & variables
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+
+$custom-theme-colors: (
+    "altlight": #f2ebfa,
+    "altdark": #522192,
+    "bgamazon": #E3E6E6,
+    "linkamazon": #007CB0
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+//import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
