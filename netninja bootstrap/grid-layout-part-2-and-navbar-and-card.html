@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Grid layout part 2 and Navbar</title>
+    <title>Bootstrap</title>
 
     <!-- use this one for using custom variables modified in the sass folder > main.scss -->
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./main.min.css">
     <!-- use this for using css from cdn -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
@@ -24,7 +24,7 @@
 <body>
 
     <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-light pt-5 pb-4">
+    <nav class="pt-5 pb-4 navbar navbar-expand-md navbar-light">
         <div class="container-xxl">
             <!-- navbar brand / title -->
             <a class="navbar-brand" href="#intro">
@@ -67,21 +67,21 @@
     <section id="intro">
         <div class="container-lg">
             <div class="row justify-content-center align-items-center">
-                <div class="col md-5 text-center text-md-start">
+                <div class="text-center col md-5 text-md-start">
                     <h1>
                         <div class="display-2">Black-Belt</div>
                         <div class="display-5 text-muted">Your Coding Skills</div>
                     </h1>
-                    <p class="lead my-4 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt,
+                    <p class="my-4 lead text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt,
                         laudantium.</p>
                     <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
                     <!-- open sidebar / offcanvas -->
-                    <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button"
+                    <a href="#sidebar" class="mt-3 d-block" data-bs-toggle="offcanvas" role="button"
                         aria-controls="sidebar">
                         Explore other books
                     </a>
                 </div>
-                <div class="col md-5 text-center d-none d-md-block">
+                <div class="text-center col md-5 d-none d-md-block">
                     <!-- tooltip -->
                     <span class="tt" data-bs-placement="bottom" title="Net Ninja Book Cover">
                         <img class="img-fluid" src="./assets/ebook-cover.png" alt="ebook cover">
@@ -92,40 +92,40 @@
     </section>
 
     <!-- pricing plans -->
-    <section id="pricing" class="bg-light mt-5">
+    <section id="pricing" class="mt-5 bg-light">
         <div class="container-lg">
             <div class="text-center">
                 <h2>Pricing plans</h2>
                 <p class="lead text-muted">Choose a pricing plan to suit you.</p>
             </div>
 
-            <div class="row my-5 align-items-center justify-content-center g-2">
+            <div class="my-5 row align-items-center justify-content-center g-2">
 
                 <div class="col-8 col-lg-4 col-xl-3">
-                    <div class="card border-0">
-                        <div class="card-body text-center py-4">
+                    <div class="border-0 card">
+                        <div class="py-4 text-center card-body">
                             <h4 class="card-title">Starter Edition</h4>
-                            <p class="lead  card-subtitle">eBook download only</p>
-                            <p class="display-5 my-4 text-primary fw-bold">$12.99</p>
-                            <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum, dolor sit amet
+                            <p class="lead card-subtitle">eBook download only</p>
+                            <p class="my-4 display-5 text-primary fw-bold">$12.99</p>
+                            <p class="mx-5 card-text text-muted d-none d-lg-block">Lorem ipsum, dolor sit amet
                                 consectetur adipisicing elit.</p>
-                            <a href="" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+                            <a href="" class="mt-3 btn btn-outline-primary btn-lg">Buy Now</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-9 col-lg-4 ">
-                    <div class="card border-primary border-2">
-                        <div class="card-header text-center text-primary">Most Popular</div>
-                        <div class="card-body text-center py-5">
+                    <div class="border-2 card border-primary">
+                        <div class="text-center card-header text-primary">Most Popular</div>
+                        <div class="py-5 text-center card-body">
                             <h4 class="card-title">Complete Edition</h4>
                             <p class="lead card-subtitle">eBook download & all updates</p>
-                            <p class="display-4 my-4 text-primary fw-bold">$18.99</p>
-                            <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet
+                            <p class="my-4 display-4 text-primary fw-bold">$18.99</p>
+                            <p class="mx-5 card-text text-muted d-none d-lg-block">Lorem ipsum dolor sit amet
                                 consectetur
                                 adipisicing elit. Mollitia, vitae magni! Repellat commodi a fuga corporis saepe dolorum.
                             </p>
-                            <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+                            <a href="#" class="mt-3 btn btn-outline-primary btn-lg">
                                 Buy Now
                             </a>
                         </div>
@@ -133,15 +133,15 @@
                 </div>
 
                 <div class="col-8 col-lg-4 col-xl-3">
-                    <div class="card border-0">
-                        <div class="card-body text-center py-4">
+                    <div class="border-0 card">
+                        <div class="py-4 text-center card-body">
                             <h4 class="card-title">Ultimate Edition</h4>
                             <p class="lead card-subtitle">download, updates & extras</p>
-                            <p class="display-5 my-4 text-primary fw-bold">$24.99</p>
-                            <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet
+                            <p class="my-4 display-5 text-primary fw-bold">$24.99</p>
+                            <p class="mx-5 card-text text-muted d-none d-lg-block">Lorem ipsum dolor sit amet
                                 consectetur adipisicing elit. Mollitia, vitae magni! Repellat commodi a fuga corporis
                                 saepe dolorum.</p>
-                            <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+                            <a href="#" class="mt-3 btn btn-outline-primary btn-lg">
                                 Buy Now
                             </a>
                         </div>
@@ -160,7 +160,7 @@
                 <p class="lead text-muted">A quick glance at the topics you'll learn</p>
             </div>
 
-            <div class="row my-5 g-5 justify-content-around align-items-center">
+            <div class="my-5 row g-5 justify-content-around align-items-center">
                 <div class="col-6 col-lg-4">
                     <img src="./assets/kindle.png" class="img-fluid" alt="ebook">
                 </div>
@@ -295,11 +295,11 @@
                 <p class="lead">What my students have said about the book...</p>
             </div>
 
-            <div class="row justify-content-center my-5">
+            <div class="my-5 row justify-content-center">
                 <div class="col-lg-8">
                     <div class="list-group">
 
-                        <div class="list-group-item py-3">
+                        <div class="py-3 list-group-item">
                             <div class="pb-2">
                                 <i class="bi bi-star-fill text-altdark"></i>
                                 <i class="bi bi-star-fill text-altdark"></i>
@@ -315,7 +315,7 @@
                             <small>Review by Mario</small>
                         </div>
 
-                        <div class="list-group-item py-3">
+                        <div class="py-3 list-group-item">
                             <div class="pb-2">
                                 <i class="bi bi-star-fill text-altdark"></i>
                                 <i class="bi bi-star-fill text-altdark"></i>
@@ -330,7 +330,7 @@
                             <small>Review by Mario</small>
                         </div>
 
-                        <div class="list-group-item py-3">
+                        <div class="py-3 list-group-item">
                             <div class="pb-2">
                                 <i class="bi bi-star-fill text-altdark"></i>
                                 <i class="bi bi-star-fill text-altdark"></i>
@@ -364,7 +364,7 @@
                 <p class="lead">Questions to ask? Fill out the form to contact me...</p>
             </div>
 
-            <div class="row justify-content-center my-5">
+            <div class="my-5 row justify-content-center">
                 <div class="col-lg-6">
                     <form>
 
@@ -400,7 +400,7 @@
 
 
                         <label for="subject" class="form-label">What is your question about?</label>
-                        <div class="input-group mb-4">
+                        <div class="mb-4 input-group">
                             <span class="input-group-text">
                                 <i class="bi bi-chat-right-dots-fill"></i>
                             </span>
@@ -412,7 +412,7 @@
                         </div>
 
 
-                        <div class="mb-4 mt-5 form-floating">
+                        <div class="mt-5 mb-4 form-floating">
                             <textarea class="form-control" id="query" style="height: 140px"
                                 placeholder="query"></textarea>
                             <label for="query">Your query...</label>
@@ -438,8 +438,8 @@
                 <p class="lead">Get the latest updates as they happen...</p>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-8 text-center">
-                    <p class="text-muted my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                <div class="text-center col-md-8">
+                    <p class="my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
                         exercitationem voluptatibus porro, hic asperiores fuga illo voluptates obcaecati deleniti
                         veritatis sunt saepe quasi deserunt ex ipsum. Est possimus, aspernatur, vitae eligendi rem odit
                         quaerat, ipsum pariatur ratione maxime delectus fuga minus accusamus dolores iusto maiores
@@ -491,7 +491,7 @@
                 earum nesciunt doloremque maxime quam dolore eveniet, itaque a accusamus assumenda labore doloribus
                 commodi, ipsum repudiandae dolor?</p>
             <!-- dropdown -->
-            <div class="dropdown mt-3">
+            <div class="mt-3 dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown"
                     data-bs-toggle="dropdown">
                     Choose a book title
