@@ -22,53 +22,64 @@ alert("Bienvenido al cajero automatico\n");
 
 claveingresada = prompt("Ingresa tu clave personal para acceder a las funciones del cajero");
 
-if (claveingresada == clavepersonal) {
-    opcion = prompt("Que operacion deseas realizar el dia de hoy?\n1 - Retirar dinero\n2 - Depositar dinero \n3 - Verificar saldo disponible\n4 - Salir");
+if (claveingresada != null) {
 
-    if (opcion == 1) {
-        valorusuario = prompt("Que monto deseas retirar")
-        if (isNaN(valorusuario) === true) {
-            alert(`Por favor ingresa solo numeros(${valorusuario})`);
-            alert("Sesion finalizada");
-        } else if (valorusuario > saldo) {
-            alert(`Saldo insuficiente para realizar retiro de ${valorusuario} $ \n`);
-            alert(`Saldo disponible = ${saldo} $`);
-            alert("Sesion finalizada");
-        } else {
-            valorusuario = +valorusuario;
-            total = (saldo) - (valorusuario);
-            alert("Operacion exitosa");
-            alert(`Saldo disponible = ${total} $`);
-            alert("Gracias por usar el cajero\n\nSesion finalizada");
-            saldo = total;
+
+    if (claveingresada == clavepersonal) {
+        opcion = prompt("Que operacion deseas realizar el dia de hoy?\n1 - Retirar dinero\n2 - Depositar dinero \n3 - Verificar saldo disponible\n4 - Salir");
+
+        if (opcion != null) {
+
+            if (opcion == 1) {
+                valorusuario = prompt("Que monto deseas retirar")
+                if (valorusuario != null) {
+                    if (isNaN(valorusuario) === true) {
+                        alert(`Por favor ingresa solo numeros(${valorusuario})`);
+                        alert("Sesion finalizada");
+                    } else if (valorusuario > saldo) {
+                        alert(`Saldo insuficiente para realizar retiro de ${valorusuario} $ \n`);
+                        alert(`Saldo disponible = ${saldo} $`);
+                        alert("Sesion finalizada");
+                    } else {
+                        valorusuario = +valorusuario;
+                        total = (saldo) - (valorusuario);
+                        alert("Operacion exitosa");
+                        alert(`Saldo disponible = ${total} $`);
+                        alert("Sesion finalizada");
+                        saldo = total;
+                    }
+                }
+            } else if (opcion == 2) {
+                valorusuario = prompt("Que monto deseas depositar")
+                if (valorusuario != null) {
+                    if (isNaN(valorusuario) === true) {
+                        alert(`Por favor ingresa solo numeros(${valorusuario})`);
+                        alert("Sesion finalizada");
+                    } else {
+                        valorusuario = +valorusuario;
+                        total = (saldo) + (valorusuario);
+                        alert("Operacion exitosa");
+                        alert(`Saldo disponible = ${total} $`);
+                        alert("Sesion finalizada");
+                        saldo = total;
+                    }
+                }
+            } else if (opcion == 3) {
+                alert(`Saldo disponible = ${saldo} $`);
+                alert("Sesion finalizada");
+            } else if (opcion == 4) {
+                alert("Sesion finalizada");
+            } else {
+                alert("Opcion invalida");
+                alert("Sesion finalizada");
+            }
         }
-    } else if (opcion == 2) {
-        valorusuario = prompt("Que monto deseas depositar")
-        if (isNaN(valorusuario) === true) {
-            alert(`Por favor ingresa solo numeros(${valorusuario})`);
-            alert("Sesion finalizada");
-        } else {
-            valorusuario = +valorusuario;
-            total = (saldo) + (valorusuario);
-            alert("Operacion exitosa");
-            alert(`Saldo disponible = ${total} $`);
-            alert("Gracias por usar el cajero\n\nSesion finalizada");
-            saldo = total;
-        }
-    } else if (opcion == 3) {
-        alert(`Saldo disponible = ${saldo} $`);
-        alert("Sesion finalizada");
-    } else if (opcion == 4) {
-        alert("Sesion finalizada");
     } else {
-        alert("Opcion invalida");
+        alert("Contraseña incorrecta");
         alert("Sesion finalizada");
     }
-} else {
-    alert("Contraseña incorrecta");
-    alert("Sesion finalizada");
+
+
 }
-
-
 
 
