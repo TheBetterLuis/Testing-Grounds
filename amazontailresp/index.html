@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <title>Amazon</title>
+</head>
+
+<!-- "bgamazon": #E3E6E6,
+"linkamazon": #007CB0,
+"amazonnav": #121920 -->
+<style>
+    .scrollkekhide::-webkit-scrollbar {
+        display: none;
+    }
+</style>
+
+
+
+<body class="bg-[#E3E6E6] ">
+
+
+
+
+    <!-- sidebar -->
+    <!-- Card Container -->
+    <div id="cardContainer" class="fixed top-0 left-0 w-0 h-full overflow-hidden transition-all duration-300 bg-white ">
+
+        <!-- Close Button -->
+        <button id="closeButton" class="absolute z-30 text-white right-6 top-3 ">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+
+        <!-- Card Content -->
+        <div class="relative w-full h-full pb-16 overflow-y-scroll scrollkekhide">
+
+            <aside>
+
+                <div id="asidetitle"
+                    class=" bg-[#232F3E] text-white  font-bold text-[19px] flex justify-start items-center pt-3 pr-3 pb-3 pl-8 space-x-2 ">
+
+                    <img src="../assets/images/icons8-male-user-24.png" width="30px" alt="">
+                    <a href=""> Hello, sign in</a>
+
+                </div>
+
+                <div class="pt-[7px] px-0 pb-0 mt-4  mb-4  flex flex-col  justify-start ">
+
+                    <a href="" class="mb-2  text-[18px] font-bold ml-9">Digital Content & Devices</a>
+                    <span class="py-2 hover:bg-slate-200"><a href="" class="mb-3  ml-9 mr-4 text-[14px] ">Amazon
+                            Music</a></span>
+
+                    <span class="py-2 hover:bg-slate-200"><a href="" class="mb-3  ml-9 mr-4 text-[14px]  ">Kindle
+                            E-readers
+                            &
+                            Books</a></span>
+
+                    <span class="py-2 hover:bg-slate-200"><a href="" class="mb-3  ml-9 mr-4 text-[14px] ">Amazon
+                            Appstore</a></span>
+
+
+                </div>
+
+                <hr class="text-slate-400">
+
+                <div class="pt-[7px] px-0 pb-0 mt-4  mb-4  flex flex-col  justify-start ">
+
+                    <a href="" class="mb-2  text-[18px] font-bold ml-9">Shop by Department</a>
+                    <span class="py-2 hover:bg-slate-200"><a href=""
+                            class="mb-3  ml-9 mr-4 text-[14px] ">Electronics</a></span>
+
+                    <span class="py-2 hover:bg-slate-200"><a href=""
+                            class="mb-3  ml-9 mr-4 text-[14px]  ">Computers</a></span>
+
+                    <span class="py-2 hover:bg-slate-200"><a href="" class="mb-3  ml-9 mr-4 text-[14px] ">Smart
+                            Home</a></span>
+
+                    <span class="py-2 hover:bg-slate-200"><a href="" class="mb-3  ml-9 mr-4 text-[14px] ">Arts &
+                            Crafts</a></span>
+
+
+                </div>
+                <hr class="text-slate-400">
+
+                <div class="pt-[7px] px-0 pb-0 mt-4  mb-4  flex flex-col  justify-start ">
+
+                    <a href="" class="mb-2  text-[18px] font-bold ml-9">Programs & Features</a>
+                    <span class="py-2 hover:bg-slate-200"><a href="" class="mb-3  ml-9 mr-4 text-[14px] ">Gift
+                            Cards</a></span>
+
+                    <span class="py-2 hover:bg-slate-200"><a href="" class="mb-3  ml-9 mr-4 text-[14px]  ">Shop By
+                            Interest</a></span>
+
+                    <span class="py-2 hover:bg-slate-200"><a href="" class="mb-3  ml-9 mr-4 text-[14px] ">Amazon
+                            Live</a></span>
+
+                    <span class="py-2 hover:bg-slate-200"><a href="" class="mb-3  ml-9 mr-4 text-[14px] ">International
+                            Shopping</a></span>
+
+
+                </div>
+                <hr class="text-slate-400">
+
+                <div class="pt-[7px] px-0 pb-0 mt-4  mb-4  flex flex-col  justify-start ">
+
+                    <a href="" class="mb-2  text-[18px] font-bold ml-9">Help & Settings</a>
+                    <span class="py-2 hover:bg-slate-200"><a href="" class="mb-3  ml-9 mr-4 text-[14px] ">Your
+                            Account</a></span>
+
+                    <span class="py-2 hover:bg-slate-200"><a href=""
+                            class="mb-3  ml-9 mr-4 text-[14px]  ">English</a></span>
+
+                    <span class="py-2 hover:bg-slate-200"><a href="" class="mb-3  ml-9 mr-4 text-[14px] ">United
+                            States</a></span>
+
+                    <span class="py-2 hover:bg-slate-200"><a href="" class="mb-3  ml-9 mr-4 text-[14px] ">Customer
+                            Service</a></span>
+
+                    <span class="py-2 hover:bg-slate-200"><a href="" class="mb-3  ml-9 mr-4 text-[14px] ">Sign
+                            in</a></span>
+
+
+                </div>
+                <hr class="text-slate-400">
+
+
+
+            </aside>
+
+        </div>
+    </div>
+
+
+    <!-- nav -->
+    <nav class="bg-[#121920] z-30 relative" id="top">
+
+        <div class="text-center ">
+
+            <div
+                class="grid justify-center grid-cols-6 gap-1 py-3 text-white sm:grid-cols-6 md:grid-cols-12 lg:grid-cols-12">
+
+                <div class="col-span-1 xl:hidden ">
+                    <div class="grid pt-4 justify-items-center">
+                        <button id="toggleButton" class="px-4 py-2 text-white bg-[#121920] rounded">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-menu">
+                                <line x1="4" x2="20" y1="12" y2="12" />
+                                <line x1="4" x2="20" y1="6" y2="6" />
+                                <line x1="4" x2="20" y1="18" y2="18" />
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="col-span-2 sm:col-span-2 xl:col-span-1">
+                    <div class="grid pt-6 justify-items-start sm:justify-items-start md:justify-items-center ">
+                        <img src="../assets/images/Amazon-Logo-White-Transparent.png" alt="" width="70%">
+                    </div>
+                </div>
+
+                <div class="hidden col-span-1 xl:block">
+                    <div class="flex justify-center pt-4 ">
+                        <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                        </svg>
+                        <span class="text-[14px] 2xl:text-[16px]">Deliver to</span>
+
+                    </div>
+                    <span class="text-[14px] font-bold 2xl:text-[16px]">Venezuela</span>
+
+                </div>
+
+                <!--Searchbar-->
+                <div class="hidden col-span-6 pt-2 sm: xl:block">
+                    <div class="items-center justify-between px-2 py-1 overflow-hidden bg-white rounded-lg sm:flex">
+                        <select id="Com" class="px-4 py-2 text-base text-gray-800 border-2 rounded-lg outline-none">
+                            <option value="com" selected>All</option>
+                            <option value="arts">Arts & Crafts</option>
+                            <option value="Automotive">Automotive</option>
+                            <option value="Baby">Baby</option>
+                            <option value="Beauty & Personal Care">Beauty & Personal Care</option>
+                            <option value="Books">Books</option>
+                        </select>
+                        <input class="flex-grow px-2 text-base text-gray-400 outline-none " type="text"
+                            placeholder="Search Amazon" />
+                        <div class="items-center px-2 mx-auto space-x-4 rounded-lg ms:flex ">
+
+                            <button class="px-4 py-2 text-base font-thin text-white bg-[#FEBD69] rounded-lg"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden col-span-1 pt-6 xl:block">
+                    <div class="flex justify-center gap-2 ">
+                        <img src="../assets/images/icons/flag-us-svgrepo-com.svg" alt="" width="20px">
+                        <span class="text-[12px] font-bold 2xl:text-[16px]">EN</span>
+                        <img src="../assets/images/graytriangle.png" alt="" width="20px">
+                    </div>
+                </div>
+
+                <div class="hidden col-span-1 pt-4 xl:block">
+                    <div class="">
+                        <span class="text-[12px] 2xl:text-[16px]">Hello, sign in</span>
+                        <span class="text-[12px] font-bold 2xl:text-[16px]">Account & Lists</span>
+                    </div>
+                </div>
+
+                <div class="hidden col-span-1 px-6 pt-4 xl:block">
+                    <div class="">
+                        <span class="text-[12px] 2xl:text-[16px]">Returns</span>
+                        <span class="text-[12px] font-bold 2xl:text-[16px]">& Orders</span>
+                    </div>
+                </div>
+
+                <div class="col-span-2 col-start-5 pt-2 sm:col-start-5 md:col-span-2 md:col-start-11 xl:col-start-12">
+                    <div class="flex justify-center gap-3 md:justify-end xl:justify-start xl:gap-0">
+                        <img src="../assets/images/icons8-person-64.png" alt="" class="xl:hidden ">
+                        <img src="../assets/images/icons8-cart-64.png" alt="" class="xl:size-1/2">
+                        <span class="hidden pt-4 2xl:text-[20px]  xl:block">Cart</span>
+                    </div>
+                </div>
+
+                <!-- mobile searchbar -->
+                <div class="col-span-6 pt-3 pb-1 sm:px-2 sm:mx-2 sm:col-span-6 xl:hidden md:col-span-12">
+                    <div class="flex items-center justify-between px-2 py-1 overflow-hidden bg-white rounded-lg">
+                        <select id="Com"
+                            class="px-0 py-2 text-base text-gray-800 border-2 rounded-lg outline-none sm:px-4">
+                            <option value="com" selected>All</option>
+                            <option value="arts">Arts & Crafts</option>
+                            <option value="Automotive">Automotive</option>
+                            <option value="Baby">Baby</option>
+                            <option value="Beauty & Personal Care">Beauty & Personal Care</option>
+                            <option value="Books">Books</option>
+                        </select>
+                        <input class="flex-grow text-base text-gray-400 outline-none sm:px-2 " type="text"
+                            placeholder="Search Amazon" />
+                        <div class="items-center mx-auto space-x-4 rounded-lg sm:px-2 ms:flex ">
+
+                            <button class="px-4 py-2 text-base font-thin text-white bg-[#FEBD69] rounded-lg"><svg
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- banner -->
+    <div class="bg-[#121920] text-white xl:bg-[#222F3F] z-30 relative">
+
+
+        <ul class="flex items-center gap-2 p-2 overflow-x-scroll text-nowrap scrollkekhide xl:font-bold ">
+
+
+            <div class="hover:outline outline-offset-4 outline-1"><button id="toggleButton2"
+                    class="flex gap-2 max-xl:hidden"><span><img src="../assets/images/icons8-hamburger-menu-50.png"
+                            alt="hamburger-icon" class="w-5"></span><span>All</span></button></div>
+            <a href="" class="xl:hidden">Deals</a>
+            <a href="" class="xl:hidden">Amazon Basics</a>
+            <a href="" class="xl:hidden">Best Sellers</a>
+            <a href="" class="xl:hidden">Livestreams</a>
+            <a href="" class="xl:hidden">Music</a>
+            <a href="" class="xl:hidden">Video</a>
+            <a href="" class="xl:hidden">New Releases</a>
+            <a href="" class="xl:hidden">Books</a>
+            <a href="" class="xl:hidden">Home</a>
+            <a href="" class="xl:hidden">Health & Household</a>
+
+            <a href="" class="max-xl:hidden hover:outline outline-offset-4 outline-1">Today's Deals</a>
+            <a href="" class="max-xl:hidden hover:outline outline-offset-4 outline-1">Customer Service</a>
+            <a href="" class="max-xl:hidden hover:outline outline-offset-4 outline-1">Registry</a>
+            <a href="" class="max-xl:hidden hover:outline outline-offset-4 outline-1">Gift Cards</a>
+            <a href="" class="max-xl:hidden hover:outline outline-offset-4 outline-1">Sell</a>
+
+
+
+        </ul>
+    </div>
+
+    <!-- main -->
+    <main class="bg-[#E3E6E6] ">
+        <div id="container"
+            class="bg-no-repeat bg-contain bg-[url('../assets/images/backgrounds/backgroundmobile.jpg')]  xl:bg-[url('../assets/images/backgrounds/background.jpg')] -mt-0 sm:mt-0 md:-mt-11 lg:-mt-26 xl:mt-0  z-0 relative ">
+
+            <section class="pt-80 sm:pt-96 md:pt-96 lg:pt-[450px] xl:pt-64">
+
+                <div class="items-center grid-cols-1 text-center ">
+
+                    <section id="2columns"
+                        class="grid md:grid-cols-2 xl:grid-cols-4 animate__animated animate__bounceInLeft">
+
+                        <section>
+
+                            <div class="grid grid-cols-12 pb-7 md:col-span-6 md:grid-cols-12 xl:grid-cols-12 ">
+
+                                <span
+                                    class="bg-[#ffffff]  text-[21px]  col-span-10 col-start-2  text-start font-bold  pt-2 pl-2 pb-1 sm:text-center  sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2 ">Gaming
+                                    accesories</span>
+                                <span
+                                    class="flex flex-col col-span-5 col-start-2 bg-white text-start sm:col-span-4 sm:col-start-3 md:col-start-2 md:col-span-5 xl:col-start-2 xl:col-span-5 ">
+                                    <img src="../assets/images/grids/headphones.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1 sm:text-center sm:pl-0 ">Headsets</span>
+                                </span>
+
+                                <span
+                                    class="flex flex-col col-span-5 col-start-7 bg-white text-start sm:col-span-4 md:col-span-5 xl:col-span-5 ">
+                                    <img src="../assets/images/grids/keyboard.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1 sm:text-center sm:pl-0">Keyboards</span>
+                                </span>
+
+                                <span
+                                    class="flex flex-col col-span-5 col-start-2 bg-white text-start sm:col-span-4 sm:col-start-3 md:col-start-2 md:col-span-5 xl:col-start-2 xl:col-span-5 ">
+                                    <img src="../assets/images/grids/mouse.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1 sm:text-center sm:pl-0">Computer mice</span>
+                                </span>
+
+                                <span
+                                    class="flex flex-col col-span-5 col-start-7 bg-white text-start sm:col-span-4 md:col-span-5 xl:col-span-5 ">
+                                    <img src="../assets/images/grids/chair.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1 sm:text-center sm:pl-0">Chairs</span>
+                                </span>
+
+                                <span
+                                    class="bg-[#ffffff] text-[13px] text-[#007185]   col-span-10 col-start-2   text-start  pt-2 pl-2 pb-1 sm:text-center sm:pl-0 sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2">See
+                                    more</span>
+
+
+
+                            </div>
+
+                        </section>
+
+                        <section>
+
+                            <div class="grid grid-cols-12 pb-7 md:col-span-6 md:grid-cols-12 xl:grid-cols-12">
+
+                                <span
+                                    class="bg-[#ffffff]  text-[21px]  col-span-10 col-start-2  text-start font-bold  pt-2 pl-2 pb-1 sm:text-center  sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2">Refresh
+                                    your space</span>
+                                <span
+                                    class="flex flex-col col-span-5 col-start-2 bg-white text-start sm:col-span-4 sm:col-start-3 md:col-start-2 md:col-span-5 xl:col-start-2 xl:col-span-5">
+                                    <img src="../assets/images/grids/dining.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1 sm:text-center sm:pl-0">Dining</span>
+                                </span>
+
+                                <span
+                                    class="flex flex-col col-span-5 col-start-7 bg-white text-start sm:col-span-4 md:col-span-5 xl:col-span-5">
+                                    <img src="../assets/images/grids/home.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1  sm:text-center sm:pl-0">Home</span>
+                                </span>
+
+                                <span
+                                    class="flex flex-col col-span-5 col-start-2 bg-white text-start sm:col-span-4 sm:col-start-3 md:col-start-2 md:col-span-5 xl:col-start-2 xl:col-span-5">
+                                    <img src="../assets/images/grids/kitchen.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1 sm:text-center sm:pl-0 ">Kitchen</span>
+                                </span>
+
+                                <span
+                                    class="flex flex-col col-span-5 col-start-7 bg-white text-start sm:col-span-4 md:col-span-5 xl:col-span-5">
+                                    <img src="../assets/images/grids/healthandbeauty.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1 sm:text-center sm:pl-0">Health & Beauty</span>
+                                </span>
+
+                                <span
+                                    class="bg-[#ffffff] text-[13px] text-[#007185]   col-span-10 col-start-2   text-start  pt-2 pl-2 pb-1 sm:text-center sm:pl-0 sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2">See
+                                    more</span>
+
+
+
+                            </div>
+
+                        </section>
+
+                        <section>
+
+                            <div class="grid grid-cols-12 pb-7 md:col-span-6 md:grid-cols-12 xl:grid-cols-12 ">
+
+                                <span
+                                    class="bg-[#ffffff]  text-[21px]  col-span-10 col-start-2  text-start font-bold  pt-2 pl-2 pb-1 sm:text-center  sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10  xl:col-span-10 xl:col-start-2">Deals
+                                    in PCs</span>
+
+                                <span
+                                    class="flex flex-col col-span-10 col-start-2 bg-white text-start sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2 ">
+                                    <img src="../assets/images/grids/dealsinpcs.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+
+                                </span>
+
+                                <span
+                                    class="bg-[#ffffff] text-[13px] text-[#007185]   col-span-10 col-start-2   text-start  pt-2 pl-2 pb-1 sm:text-center sm:pl-0 sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2">Shop
+                                    now</span>
+
+                            </div>
+
+                        </section>
+
+                        <section>
+
+                            <div class="grid grid-cols-12 pb-7 md:col-span-6 md:grid-cols-12 xl:grid-cols-12">
+
+                                <span
+                                    class="bg-[#ffffff]  text-[21px]  col-span-10 col-start-2  text-start font-bold  pt-2 pl-2 pb-1 sm:text-center  sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2">Amazon
+                                    Gadget Store</span>
+
+                                <span
+                                    class="flex flex-col col-span-10 col-start-2 bg-white text-start sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2">
+                                    <img src="../assets/images/grids/smartphones.jpg" alt=""
+                                        class="px-2 mx-auto size-max shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1">Smartphones</span>
+                                </span>
+
+                                <span
+                                    class="flex flex-col col-span-3 col-start-2 bg-white text-start sm:col-start-3 md:col-start-2 md:col-span-3 xl:col-start-2 xl:col-span-3 ">
+                                    <img src="../assets/images/grids/tablets.jpg" alt=""
+                                        class="pl-2 mx-auto size-max xl:pl-2 shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1">Tablets</span>
+                                </span>
+
+                                <span
+                                    class="flex flex-col col-span-4 bg-white text-start sm:col-span-2 md:col-span-4 xl:col-span-4">
+                                    <img src="../assets/images/grids/laptops.jpg" alt=""
+                                        class="mx-auto size-max xl:px-0 shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1">Laptops</span>
+                                </span>
+
+                                <span
+                                    class="flex flex-col col-span-3 bg-white text-start md:col-span-3 xl:block xl:col-span-3">
+                                    <img src="../assets/images/grids/tvs.jpg" alt=""
+                                        class="pr-2 mx-auto size-max xl:pr-2 shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1">TVs</span>
+                                </span>
+
+                                <span
+                                    class="bg-[#ffffff] text-[13px] text-[#007185]   col-span-10 col-start-2   text-start pt-2 pl-2 pb-1 sm:text-center sm:pl-0 sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2">See
+                                    more from amazon Gadgets</span>
+
+
+
+                            </div>
+
+                        </section>
+
+                    </section>
+
+                    <section id="2columns" class="grid md:grid-cols-2 xl:grid-cols-4 ">
+
+                        <section>
+
+                            <div class="grid grid-cols-12 pb-7 md:col-span-6 md:grid-cols-12 xl:grid-cols-12">
+
+                                <span
+                                    class="bg-[#ffffff]  text-[21px]  col-span-10 col-start-2  text-start font-bold  pt-2 pl-2 pb-1 sm:text-center  sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2 ">Shop
+                                    deals in Fashion</span>
+                                <span
+                                    class="flex flex-col col-span-5 col-start-2 bg-white text-start sm:col-span-4 sm:col-start-3 md:col-start-2 md:col-span-5 xl:col-start-2 xl:col-span-5 ">
+                                    <img src="../assets/images/grids/jeansunder50.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1 sm:text-center sm:pl-0 ">Jeans under $50</span>
+                                </span>
+
+                                <span
+                                    class="flex flex-col col-span-5 col-start-7 bg-white text-start sm:col-span-4 md:col-span-5 xl:col-span-5 ">
+                                    <img src="../assets/images/grids/topsunder50.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1 sm:text-center sm:pl-0">Tops under $25</span>
+                                </span>
+
+                                <span
+                                    class="flex flex-col col-span-5 col-start-2 bg-white text-start sm:col-span-4 sm:col-start-3 md:col-start-2 md:col-span-5 xl:col-start-2 xl:col-span-5 ">
+                                    <img src="../assets/images/grids/dressesunder30.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1 sm:text-center sm:pl-0">Dresses under $30</span>
+                                </span>
+
+                                <span
+                                    class="flex flex-col col-span-5 col-start-7 bg-white text-start sm:col-span-4 md:col-span-5 xl:col-span-5 ">
+                                    <img src="../assets/images/grids/shoesunder50.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1 sm:text-center sm:pl-0">Shoes under $50</span>
+                                </span>
+
+                                <span
+                                    class="bg-[#ffffff] text-[13px] text-[#007185]   col-span-10 col-start-2   text-start  pt-2 pl-2 pb-1 sm:text-center sm:pl-0 sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2">See
+                                    all deals</span>
+
+
+
+                            </div>
+
+                        </section>
+
+                        <section>
+
+                            <div class="grid grid-cols-12 pb-7 md:col-span-6 md:grid-cols-12 xl:grid-cols-12">
+
+                                <span
+                                    class="bg-[#ffffff]  text-[21px]  col-span-10 col-start-2  text-start font-bold  pt-2 pl-2 pb-1 sm:text-center  sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10  xl:col-span-10 xl:col-start-2">Gift
+                                    for every Mom</span>
+
+                                <span
+                                    class="flex flex-col col-span-10 col-start-2 bg-white text-start sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2 ">
+                                    <img src="../assets/images/grids/giftforeverymom.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+
+                                </span>
+
+                                <span
+                                    class="bg-[#ffffff] text-[13px] text-[#007185]   col-span-10 col-start-2   text-start  pt-2 pl-2 pb-1 sm:text-center sm:pl-0 sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2">Shop
+                                    gifts</span>
+
+                            </div>
+
+                        </section>
+
+                        <section>
+
+                            <div class="grid grid-cols-12 pb-7 md:col-span-6 md:grid-cols-12 xl:grid-cols-12">
+
+                                <span
+                                    class="bg-[#ffffff]  text-[21px]  col-span-10 col-start-2  text-start font-bold  pt-2 pl-2 pb-1 sm:text-center  sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10  xl:col-span-10 xl:col-start-2">Beauty
+                                    steals under $25</span>
+
+                                <span
+                                    class="flex flex-col col-span-10 col-start-2 bg-white text-start sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2 ">
+                                    <img src="../assets/images/grids/beautystealsunder25.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+
+                                </span>
+
+                                <span
+                                    class="bg-[#ffffff] text-[13px] text-[#007185]   col-span-10 col-start-2   text-start  pt-2 pl-2 pb-1 sm:text-center sm:pl-0 sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2">Shop
+                                    now</span>
+
+                            </div>
+
+                        </section>
+
+                        <section>
+
+                            <div class="grid grid-cols-12 pb-7 md:col-span-6 md:grid-cols-12 xl:grid-cols-12">
+
+                                <span
+                                    class="bg-[#ffffff]  text-[21px]  col-span-10 col-start-2  text-start font-bold  pt-2 pl-2 pb-1 sm:text-center  sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10  xl:col-span-10 xl:col-start-2">Toys
+                                    under $25</span>
+
+                                <span
+                                    class="flex flex-col col-span-10 col-start-2 bg-white text-start sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2 ">
+                                    <img src="../assets/images/grids/toysunder25.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+
+                                </span>
+
+                                <span
+                                    class="bg-[#ffffff] text-[13px] text-[#007185]   col-span-10 col-start-2   text-start  pt-2 pl-2 pb-1 sm:text-center sm:pl-0 sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2">Shop
+                                    now</span>
+
+                            </div>
+
+                        </section>
+
+                    </section>
+
+                    <section id="1column" class="grid grid-cols-1 pb-7">
+
+                        <section>
+
+                            <div class="grid grid-cols-12 ">
+
+                                <span
+                                    class="bg-[#ffffff]  text-[21px]    text-start font-bold  pt-2 pl-2 pb-1  sm:text-center  col-span-10 col-start-2 sm:col-span-8 sm:col-start-3 md:col-span-10 md:col-start-2 xl:col-span-12 xl:mx-7 md:-mx-8 ">Best
+                                    Sellers in Kitchen & Dining</span>
+
+                                <span
+                                    class="flex col-span-10 col-start-2 space-x-6 overflow-x-auto sm:col-span-8 sm:col-start-3 md:col-span-10 md:col-start-2 bg-[#ffffff] p-4  xl:col-span-12  xl:mx-7 md:-mx-8">
+
+                                    <img src="..//assets/images/rows1/1.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows1/2.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows1/3.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows1/4.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows1/5.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows1/6.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows1/7.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows1/8.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows1/9.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows1/10.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows1/11.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows1/12.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows1/13.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows1/14.jpg" alt="" class="shake-trigger shake-slow">
+                                </span>
+
+
+
+                            </div>
+
+                        </section>
+
+                    </section>
+
+                    <section id="1column" class="grid grid-cols-1 pb-7">
+
+                        <section>
+
+                            <div class="grid grid-cols-12 ">
+
+                                <span
+                                    class="bg-[#ffffff]  text-[21px]    text-start font-bold  pt-2 pl-2 pb-1 sm:text-center  col-span-10 col-start-2 sm:col-span-8 sm:col-start-3 md:col-span-10 md:col-start-2 xl:col-span-12 xl:mx-7 md:-mx-8">International
+                                    top sellers in Home</span>
+
+                                <span
+                                    class="flex col-span-10 col-start-2 space-x-6 overflow-x-auto sm:col-span-8 sm:col-start-3 md:col-span-10 md:col-start-2 bg-[#ffffff] p-4  xl:col-span-12  xl:mx-7 md:-mx-8">
+
+                                    <img src="..//assets/images/rows2/1.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/2.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/3.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/4.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/5.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/6.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/7.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/8.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/9.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/10.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/11.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/12.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/13.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/14.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/15.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/16.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/17.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/18.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/19.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/20.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/21.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/22.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/23.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/24.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/25.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/26.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/27.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/28.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/29.jpg" alt="" class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/rows2/30.jpg" alt="" class="shake-trigger shake-slow">
+                                </span>
+
+
+
+                            </div>
+
+                        </section>
+
+                    </section>
+
+                    <section id="2columns" class="grid md:grid-cols-2 xl:grid-cols-4">
+
+                        <section>
+
+                            <div class="grid grid-cols-12 pb-7 md:col-span-6 md:grid-cols-12 xl:grid-cols-12">
+
+                                <span
+                                    class="bg-[#ffffff]  text-[21px]  col-span-10 col-start-2  text-start font-bold  pt-2 pl-2 pb-1 sm:text-center  sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2 ">Warm
+                                    & welcoming decor</span>
+                                <span
+                                    class="flex flex-col col-span-5 col-start-2 bg-white text-start sm:col-span-4 sm:col-start-3 md:col-start-2 md:col-span-5 xl:col-start-2 xl:col-span-5 ">
+                                    <img src="../assets/images/grids/wreath.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1 sm:text-center sm:pl-0 ">Wreaths &
+                                        garlands</span>
+                                </span>
+
+                                <span
+                                    class="flex flex-col col-span-5 col-start-7 bg-white text-start sm:col-span-4 md:col-span-5 xl:col-span-5 ">
+                                    <img src="../assets/images/grids/outdoordecor.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1 sm:text-center sm:pl-0">Outdoor decor</span>
+                                </span>
+
+                                <span
+                                    class="flex flex-col col-span-5 col-start-2 bg-white text-start sm:col-span-4 sm:col-start-3 md:col-start-2 md:col-span-5 xl:col-start-2 xl:col-span-5 ">
+                                    <img src="../assets/images/grids/pillows.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1 sm:text-center sm:pl-0">Pillows & throws</span>
+                                </span>
+
+                                <span
+                                    class="flex flex-col col-span-5 col-start-7 bg-white text-start sm:col-span-4 md:col-span-5 xl:col-span-5 ">
+                                    <img src="../assets/images/grids/wallart.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1 sm:text-center sm:pl-0">Wall art & mirrors</span>
+                                </span>
+
+                                <span
+                                    class="bg-[#ffffff] text-[13px] text-[#007185]   col-span-10 col-start-2   text-start  pt-2 pl-2 pb-1 sm:text-center sm:pl-0 sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2">Shop
+                                    more fall finds</span>
+
+
+
+                            </div>
+
+                        </section>
+
+                        <section>
+
+                            <div class="grid grid-cols-12 pb-7 md:col-span-6 md:grid-cols-12 xl:grid-cols-12">
+
+                                <span
+                                    class="bg-[#ffffff]  text-[21px]  col-span-10 col-start-2  text-start font-bold  pt-2 pl-2 pb-1 sm:text-center  sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2 ">Gaming
+                                    merchandise</span>
+                                <span
+                                    class="flex flex-col col-span-5 col-start-2 bg-white text-start sm:col-span-4 sm:col-start-3 md:col-start-2 md:col-span-5 xl:col-start-2 xl:col-span-5 ">
+                                    <img src="../assets/images/grids/apparel.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1 sm:text-center sm:pl-0 ">Apparel</span>
+                                </span>
+
+                                <span
+                                    class="flex flex-col col-span-5 col-start-7 bg-white text-start sm:col-span-4 md:col-span-5 xl:col-span-5 ">
+                                    <img src="../assets/images/grids/hats.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1 sm:text-center sm:pl-0">Hats</span>
+                                </span>
+
+                                <span
+                                    class="flex flex-col col-span-5 col-start-2 bg-white text-start sm:col-span-4 sm:col-start-3 md:col-start-2 md:col-span-5 xl:col-start-2 xl:col-span-5 ">
+                                    <img src="../assets/images/grids/action-figures.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1 sm:text-center sm:pl-0">Action figures</span>
+                                </span>
+
+                                <span
+                                    class="flex flex-col col-span-5 col-start-7 bg-white text-start sm:col-span-4 md:col-span-5 xl:col-span-5 ">
+                                    <img src="../assets/images/grids/mugs.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+                                    <span class="text-[12px] pl-5 py-1 sm:text-center sm:pl-0">Mugs</span>
+                                </span>
+
+                                <span
+                                    class="bg-[#ffffff] text-[13px] text-[#007185]   col-span-10 col-start-2   text-start  pt-2 pl-2 pb-1 sm:text-center sm:pl-0 sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2">See
+                                    more</span>
+
+
+
+                            </div>
+
+                        </section>
+
+                        <section>
+
+                            <div class="grid grid-cols-12 pb-7 md:col-span-6 md:grid-cols-12 xl:grid-cols-12">
+
+                                <span
+                                    class="bg-[#ffffff]  text-[21px]  col-span-10 col-start-2  text-start font-bold  pt-2 pl-2 pb-1 sm:text-center  sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10  xl:col-span-10 xl:col-start-2 xl:pl-0   xl:py-1">Player's
+                                    paradise starts here</span>
+
+                                <span
+                                    class="flex flex-col col-span-10 col-start-2 bg-white text-start sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2 ">
+                                    <img src="../assets/images/grids/playerparadisestartshere.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+
+                                </span>
+
+                                <span
+                                    class="bg-[#ffffff] text-[13px] text-[#007185]   col-span-10 col-start-2   text-start  pt-2 pl-2 pb-1 sm:text-center sm:pl-0 sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2">Shop
+                                    video games</span>
+
+                            </div>
+
+                        </section>
+
+                        <section>
+
+                            <div class="grid grid-cols-12 pb-7 md:col-span-6 md:grid-cols-12 xl:grid-cols-12">
+
+                                <span
+                                    class="bg-[#ffffff]  text-[21px]  col-span-10 col-start-2  text-start font-bold  pt-2 pl-2 pb-1 sm:text-center  sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10  xl:col-span-10 xl:col-start-2 xl:pl-0   xl:py-1 xl:text-[20px]  ">Upgrade
+                                    your office furniture</span>
+
+                                <span
+                                    class="flex flex-col col-span-10 col-start-2 bg-white text-start sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2 ">
+                                    <img src="../assets/images/grids/upgradeyourofficefurtniture.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+
+                                </span>
+
+                                <span
+                                    class="bg-[#ffffff] text-[13px] text-[#007185]   col-span-10 col-start-2   text-start  pt-2 pl-2 pb-1 sm:text-center sm:pl-0 sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2">Shop
+                                    now</span>
+
+                            </div>
+
+                        </section>
+
+                    </section>
+
+                    <section id="1column" class="grid grid-cols-1 pb-7">
+
+                        <section>
+
+                            <div class="grid grid-cols-12 ">
+
+                                <span
+                                    class="bg-[#ffffff]  text-[21px]    text-start font-bold  pt-2 pl-2 pb-1 sm:text-center  col-span-10 col-start-2 sm:col-span-8 sm:col-start-3 md:col-span-10 md:col-start-2 xl:col-span-12 xl:mx-7 md:-mx-8">Top
+                                    Sellers in Baby Products for you</span>
+
+                                <span
+                                    class="flex col-span-10 col-start-2 space-x-6 overflow-x-auto sm:col-span-8 sm:col-start-3 md:col-span-10 md:col-start-2 bg-[#ffffff] p-4  xl:col-span-12  xl:mx-7 md:-mx-8">
+
+                                    <img src="..//assets/images/topsellersbaby/1.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/2.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/3.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/4.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/5.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/6.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/7.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/8.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/9.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/10.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/11.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/12.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/13.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/14.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/15.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/16.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/17.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/18.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/19.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/20.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/21.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/22.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/23.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/24.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/25.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/26.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/27.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/topsellersbaby/28.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                </span>
+
+
+
+                            </div>
+
+                        </section>
+
+                    </section>
+
+                    <section id="1column" class="grid grid-cols-1 pb-7">
+
+                        <section>
+
+                            <div class="grid grid-cols-12 ">
+
+                                <span
+                                    class="bg-[#ffffff]  text-[21px]    text-start font-bold  pt-2 pl-2 pb-1 sm:text-center  col-span-10 col-start-2 sm:col-span-8 sm:col-start-3 md:col-span-10 md:col-start-2 xl:col-span-12 xl:mx-7 md:-mx-8">Deals
+                                    Under $25</span>
+
+                                <span
+                                    class="flex col-span-10 col-start-2 space-x-6 overflow-x-auto sm:col-span-8 sm:col-start-3 md:col-span-10 md:col-start-2 bg-[#ffffff] p-4  xl:col-span-12  xl:mx-7 md:-mx-8">
+
+                                    <img src="..//assets/images/dealsunder25/1.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/dealsunder25/2.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/dealsunder25/3.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/dealsunder25/4.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/dealsunder25/5.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/dealsunder25/6.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/dealsunder25/7.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/dealsunder25/8.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/dealsunder25/9.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/dealsunder25/10.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/dealsunder25/11.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/dealsunder25/12.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/dealsunder25/13.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/dealsunder25/14.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/dealsunder25/15.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/dealsunder25/16.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/dealsunder25/17.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/dealsunder25/18.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/dealsunder25/19.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/dealsunder25/20.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                </span>
+
+
+
+                            </div>
+
+                        </section>
+
+                    </section>
+
+                    <section id="2columns" class="grid md:grid-cols-2 xl:grid-cols-4">
+
+                        <section>
+
+                            <div class="grid grid-cols-12 pb-7 md:col-span-6 md:grid-cols-12 xl:grid-cols-12">
+
+                                <span
+                                    class="bg-[#ffffff]  text-[21px]  col-span-10 col-start-2  text-start font-bold  pt-2 pl-2 pb-1 sm:text-center  sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10  xl:col-span-10 xl:col-start-2  xl:pl-0 xl:text-[16px]  xl:py-0 ">Shop
+                                    activity trackers and smartwatches</span>
+
+                                <span
+                                    class="flex flex-col col-span-10 col-start-2 bg-white text-start sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2 ">
+                                    <img src="../assets/images/grids/shopactivity.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+
+                                </span>
+
+                                <span
+                                    class="bg-[#ffffff] text-[13px] text-[#007185]   col-span-10 col-start-2   text-start  pt-2 pl-2 pb-1 sm:text-center sm:pl-0 sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2">Shop
+                                    now</span>
+
+                            </div>
+
+                        </section>
+
+                        <section>
+
+                            <div class="grid grid-cols-12 pb-7 md:col-span-6 md:grid-cols-12 xl:grid-cols-12">
+
+                                <span
+                                    class="bg-[#ffffff]  text-[21px]  col-span-10 col-start-2  text-start font-bold  pt-2 pl-2 pb-1 sm:text-center  sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10  xl:col-span-10 xl:col-start-2">Personal
+                                    Care under $25</span>
+
+                                <span
+                                    class="flex flex-col col-span-10 col-start-2 bg-white text-start sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2 ">
+                                    <img src="../assets/images/grids/personalcareunder25.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+
+                                </span>
+
+                                <span
+                                    class="bg-[#ffffff] text-[13px] text-[#007185]   col-span-10 col-start-2   text-start  pt-2 pl-2 pb-1 sm:text-center sm:pl-0 sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2">See
+                                    more</span>
+
+                            </div>
+
+                        </section>
+
+                        <section>
+
+                            <div class="grid grid-cols-12 pb-7 md:col-span-6 md:grid-cols-12 xl:grid-cols-12">
+
+                                <span
+                                    class="bg-[#ffffff]  text-[21px]  col-span-10 col-start-2  text-start font-bold  pt-2 pl-2 pb-1 sm:text-center  sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10  xl:col-span-10 xl:col-start-2">Creating
+                                    business solutions</span>
+
+                                <span
+                                    class="flex flex-col col-span-10 col-start-2 bg-white text-start sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2 ">
+                                    <img src="../assets/images/grids/creatingbusinesssolutions.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+
+                                </span>
+
+                                <span
+                                    class="bg-[#ffffff] text-[13px] text-[#007185]   col-span-10 col-start-2   text-start  pt-2 pl-2 pb-1 sm:text-center sm:pl-0 sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2">See
+                                    more software products</span>
+
+                            </div>
+
+                        </section>
+
+                        <section>
+
+                            <div class="grid grid-cols-12 pb-7 md:col-span-6 md:grid-cols-12 xl:grid-cols-12">
+
+                                <span
+                                    class="bg-[#ffffff]  text-[21px]  col-span-10 col-start-2  text-start font-bold  pt-2 pl-2 pb-1 sm:text-center  sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10  xl:col-span-10 xl:col-start-2">A
+                                    whole new way to work</span>
+
+                                <span
+                                    class="flex flex-col col-span-10 col-start-2 bg-white text-start sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2 ">
+                                    <img src="../assets/images/grids/Awholenewwaytowork.jpg" alt=""
+                                        class="mx-auto size-max md:px-2 shake-trigger shake-slow">
+
+                                </span>
+
+                                <span
+                                    class="bg-[#ffffff] text-[13px] text-[#007185]   col-span-10 col-start-2   text-start  pt-2 pl-2 pb-1 sm:text-center sm:pl-0 sm:col-span-8 sm:col-start-3 md:col-start-2 md:col-span-10 xl:col-span-10 xl:col-start-2">Shop
+                                    personal computers</span>
+
+                            </div>
+
+                        </section>
+
+                    </section>
+
+                    <section id="1column" class="grid grid-cols-1 pb-7">
+
+                        <section>
+
+                            <div class="grid grid-cols-12 ">
+
+                                <span
+                                    class="bg-[#ffffff]  text-[21px]    text-start font-bold  pt-2 pl-2 pb-1 sm:text-center  col-span-10 col-start-2 sm:col-span-8 sm:col-start-3 md:col-span-10 md:col-start-2 xl:col-span-12 xl:mx-7 md:-mx-8">Popular
+                                    products in PC internationally</span>
+
+                                <span
+                                    class="flex col-span-10 col-start-2 space-x-6 overflow-x-auto sm:col-span-8 sm:col-start-3 md:col-span-10 md:col-start-2 bg-[#ffffff] p-4  xl:col-span-12  xl:mx-7 md:-mx-8">
+
+                                    <img src="..//assets/images/popularproductsinpcinternationally/1.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/2.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/3.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/4.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/5.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/6.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/7.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/8.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/9.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/10.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/11.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/12.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/13.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/14.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/15.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/16.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/17.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/18.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/19.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/20.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/21.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/22.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/23.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/24.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/25.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/26.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/27.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/28.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/29.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/popularproductsinpcinternationally/30.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                </span>
+
+
+
+                            </div>
+
+                        </section>
+
+                    </section>
+
+                    <section id="1column" class="grid grid-cols-1 pb-7">
+
+                        <section>
+
+                            <div class="grid grid-cols-12 ">
+
+                                <span
+                                    class="bg-[#ffffff]  text-[21px]    text-start font-bold  pt-2 pl-2 pb-1 sm:text-center  col-span-10 col-start-2 sm:col-span-8 sm:col-start-3 md:col-span-10 md:col-start-2 xl:col-span-12 xl:mx-7 md:-mx-8">Best
+                                    Sellers in Sports & Outdoors</span>
+
+                                <span
+                                    class="flex col-span-10 col-start-2 space-x-6 overflow-x-auto sm:col-span-8 sm:col-start-3 md:col-span-10 md:col-start-2 bg-[#ffffff] p-4  xl:col-span-12  xl:mx-7 md:-mx-8">
+
+                                    <img src="..//assets/images/bestsportsoutdoors/1.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/2.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/3.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/4.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/5.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/6.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/7.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/8.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/9.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/10.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/11.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/12.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/13.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/14.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/15.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/16.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/17.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/18.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/19.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/20.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/21.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/22.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/23.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/24.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/25.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/26.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/27.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/bestsportsoutdoors/28.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                </span>
+
+
+
+                            </div>
+
+                        </section>
+
+                    </section>
+
+                    <section id="1column" class="grid grid-cols-1 pb-7">
+
+                        <section>
+
+                            <div class="grid grid-cols-12 ">
+
+                                <span
+                                    class="bg-[#ffffff]  text-[21px]    text-start font-bold  pt-2 pl-2 pb-1 sm:text-center  col-span-10 col-start-2 sm:col-span-8 sm:col-start-3 md:col-span-10 md:col-start-2 xl:col-span-12 xl:mx-7 md:-mx-8">Popular
+                                    products in Apparel internationally</span>
+
+                                <span
+                                    class="flex col-span-10 col-start-2 space-x-6 overflow-x-auto sm:col-span-8 sm:col-start-3 md:col-span-10 md:col-start-2 bg-[#ffffff] p-4  xl:col-span-12  xl:mx-7 md:-mx-8">
+
+                                    <img src="..//assets/images/apparelinternational/1.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/2.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/3.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/4.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/5.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/6.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/7.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/8.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/9.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/10.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/11.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/12.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/13.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/14.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/15.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/16.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/17.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/18.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/19.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/20.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/21.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/22.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/23.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/24.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/25.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/26.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/27.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/28.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/29.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                    <img src="..//assets/images/apparelinternational/30.jpg" alt=""
+                                        class="shake-trigger shake-slow">
+                                </span>
+
+
+
+                            </div>
+
+                        </section>
+
+                    </section>
+
+                </div>
+
+            </section>
+
+
+
+        </div>
+    </main>
+
+    <!-- Back to top -->
+    <section>
+        <div class="grid grid-cols-3 bg-[#374753] text-white  italic">
+            <div class="col-span-1 col-start-2 text-center text-[17px] py-2">
+                <a href="#top">
+                    <h3>Back To Top</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+
+        <section>
+            <div class="p-4  bg-[#222F3F] text-white text-[16px] text-start ">
+
+                <div class="grid grid-cols-6 ">
+                    <a href="" class="col-span-3 py-1 hover:underline">Amazon.com</a>
+                    <a href="" class="col-span-3 py-1 hover:underline">Your Orders</a>
+                </div>
+
+                <div class="grid grid-cols-6">
+                    <a href="" class="col-span-3 py-1 hover:underline">Your Lists</a>
+                    <a href="" class="col-span-3 py-1 hover:underline">Gift Cards & Registry</a>
+                </div>
+
+                <div class="grid grid-cols-6">
+                    <a href="" class="col-span-3 py-1 hover:underline">Find a Gift</a>
+                    <a href="" class="col-span-3 py-1 hover:underline">Your Account</a>
+                </div>
+
+                <div class="grid grid-cols-6">
+                    <a href="" class="col-span-3 py-1 hover:underline">Browsing History</a>
+                    <a href="" class="col-span-3 py-1 hover:underline">Sell products on Amazon</a>
+                </div>
+
+                <div class="grid grid-cols-6">
+                    <a href="" class="col-span-3 py-1 hover:underline">Returns</a>
+                    <a href="" class="col-span-3 py-1 hover:underline">Recalls and Products Safety Alerts</a>
+                </div>
+
+
+                <div class="grid grid-cols-6">
+                    <a href="" class="col-span-3 col-start-4 row-start-6 py-1 hover:underline ">Customer Service</a>
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+        <section class="bg-[#131B23] text-white">
+
+            <div class="grid grid-cols-12 p-4 text-[15px] sm:text-[16px] md:text-[17px] lg:text-[19px] xl:text-[21px] ">
+
+
+                <img src="../assets/images/globe.png" alt="globe"
+                    class="col-span-1 col-start-2 size-7 justify-self-end">
+                <span class="col-span-2 col-start-3 pl-2 hover:underline"> English</span>
+
+
+
+                <img src="../assets/images/dollarsign.png" alt="dollarsign" class="col-span-1 size-7 justify-self-end">
+                <span class="col-span-3 pl-2 hover:underline">USD - U.S.
+                    Dollar</span>
+
+                <img src="../assets/images/icons8-usa-44.png" alt="" class="col-span-1 size-8 justify-self-end ">
+                <span class="col-span-3 pl-2 hover:underline md:pl-4">United States</span>
+
+            </div>
+
+            <div class="grid grid-cols-5 p-4">
+                <span
+                    class="col-span-3 col-start-2 text-center text-[15px] font-bold hover:underline md:text-[18px] ">Already
+                    a
+                    customer? Sign
+                    in</span>
+            </div>
+
+            <div class="grid grid-cols-12 text-[11px] md:text-[12px]">
+                <span class="col-span-6 px-2 py-1 text-end">Conditions of Use</span>
+                <span class="col-span-6 px-2 py-1 text-start">Privacy Notice</span>
+                <span class="col-span-6 px-2 py-1 text-end">Consumer Health Data Privacy Disclosure</span>
+                <span class="col-span-6 px-2 py-1 text-start">Your Ads Privachy Choices</span>
+            </div>
+
+        </section>
+
+        <section></section>
+    </footer>
+
+
+
+
+</body>
+
+
+<script>
+    const toggleButton = document.getElementById('toggleButton');
+    const toggleButton2 = document.getElementById('toggleButton2');
+    const cardContainer = document.getElementById('cardContainer');
+    const closeButton = document.getElementById('closeButton');
+    const closeButton2 = document.getElementById('closeButton2');
+
+    toggleButton.addEventListener('click', () => {
+        cardContainer.style.width = cardContainer.style.width === '350px' ? '0' : '350px';
+    });
+
+    closeButton.addEventListener('click', () => {
+        cardContainer.style.width = '0';
+    });
+
+    toggleButton2.addEventListener('click', () => {
+        cardContainer.style.width = cardContainer.style.width === '350px' ? '0' : '350px';
+    });
+
+    closeButton2.addEventListener('click', () => {
+        cardContainer.style.width = '0';
+    });
+</script>
+
+
+
+</html>
