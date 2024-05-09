@@ -266,6 +266,7 @@ function corrienteAhorro(saldoCtaAhorros, saldoCtaAhorrosNew, saldoCtaCorriente,
     if (monto != null && monto !== undefined && (isNaN(monto) !== true)) {
         saldoCtaAhorrosNew = (saldoCtaAhorros) + (+monto);
         saldoCtaCorrienteNew = (saldoCtaCorriente) - (+monto);
+        alert(`Transferencia exitosa\n\nSaldo cuenta de ahorros = $${saldoCtaAhorrosNew}\nSaldo cuenta corriente = $${saldoCtaCorrienteNew}`);
         actualizarSaldo(saldoCtaCorrienteNew, saldoCtaAhorrosNew);
     }
 
@@ -276,6 +277,7 @@ function ahorroCorriente(saldoCtaAhorros, saldoCtaAhorrosNew, saldoCtaCorriente,
     if (monto != null && monto !== undefined && (isNaN(monto) !== true)) {
         saldoCtaAhorrosNew = (saldoCtaAhorros) - (+monto);
         saldoCtaCorrienteNew = (saldoCtaCorriente) + (+monto);
+        alert(`Transferencia exitosa\n\nSaldo cuenta de ahorros = $${saldoCtaAhorrosNew}\nSaldo cuenta corriente = $${saldoCtaCorrienteNew}`);
         actualizarSaldo(saldoCtaCorrienteNew, saldoCtaAhorrosNew);
     }
 
