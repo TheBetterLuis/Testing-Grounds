@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--Th <link rel="stylesheet" href="./style.css"> er-->
+
+  <title>test</title>
+</head>
+
+<body class="bg-gray-600">
+
+  <!-- start game -->
+  <div class="grid grid-cols-12 p-4 comienzo">
+
+    <h1 class="col-span-10 col-start-2 py-2 font-bold text-center text-white title comienzo">El Semaforo</h1>
+
+    <div class="col-span-10 col-start-2 py-2 ">
+      <img src="https://i.ibb.co/JjFSRv0/63eac82836ed1-r-d-306-204-0.jpg" alt="">
+    </div>
+
+    <button onclick="startGame()"
+      class="col-span-10 col-start-2 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600 ">
+      <h1>Start Game</h1>
+    </button>
+
+  </div>
+
+  <!-- verde -->
+  <div class="grid grid-cols-12 p-4 space-x-2 verdeP">
+    <h1 class="col-span-10 col-start-2 py-2 font-bold text-center text-white title">Verde</h1>
+    <div class="col-span-10 col-start-2 py-2 ">
+      <img src="https://i.ibb.co/cb2srM2/mac-1-27-de-marzo.jpg" alt="">
+    </div>
+
+    <button onclick="verdeAcelerar()"
+      class="col-span-3 col-start-2 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600">
+      <h1>Acelerar</h1>
+    </button>
+    <button onclick="verdePasarNormalmente()"
+      class="col-span-4 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600">
+
+      <h1>Pasar normalmente</h1>
+    </button>
+    <button onclick="verdeEsperar()"
+      class="col-span-3 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600">
+      <h1>Esperar</h1>
+    </button>
+
+  </div>
+
+  <div class="grid grid-cols-12 p-4 verdeWrongAcelerar">
+
+    <h1 class="col-span-10 col-start-2 py-2 font-bold text-center text-white title ">Oh no!, Aceleraste demasiado y
+      chocaste 💥¡Has perdido! 😞</h1>
+
+    <div class="col-span-10 col-start-2 py-2 ">
+      <img src="https://i.ibb.co/7W5NqdV/wrongverde.png" alt="">
+    </div>
+
+    <button onclick="verdeContinue()"
+      class="col-span-10 col-start-2 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600 ">
+      <h1>Retry?</h1>
+    </button>
+
+    <button onclick="exitGame()"
+      class="col-span-10 col-start-2 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600 ">
+      <h1>Exit</h1>
+    </button>
+
+  </div>
+
+  <div class="grid grid-cols-12 p-4 verdeWelldone">
+
+    <h1 class="col-span-10 col-start-2 py-2 font-bold text-center text-white title ">Bien hecho!, pasaste en el
+      momento adecuado ✅¡Has ganado! 😁</h1>
+
+    <div class="col-span-10 col-start-2 py-2 ">
+      <img src="https://i.ibb.co/6Hhj2nG/clapverde.png" alt="">
+    </div>
+
+    <button onclick="verdeContinue()"
+      class="col-span-10 col-start-2 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600 ">
+      <h1>Continue</h1>
+    </button>
+
+  </div>
+
+  <div class="grid grid-cols-12 p-4 verdeWrongEsperar">
+
+    <h1 class="col-span-10 col-start-2 py-2 font-bold text-center text-white title ">Oh no! Creaste un bloqueo y los
+      demas conductores estan furiosos 🤬 ¡Has Perdido! ❌</h1>
+
+    <div class="col-span-10 col-start-2 py-2 ">
+      <img src="https://i.ibb.co/7W5NqdV/wrongverde.png" alt="">
+    </div>
+
+    <button onclick="verdeContinue()"
+      class="col-span-10 col-start-2 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600 ">
+      <h1>Retry?</h1>
+    </button>
+
+    <button onclick="exitGame()"
+      class="col-span-10 col-start-2 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600 ">
+      <h1>Exit</h1>
+    </button>
+
+  </div>
+
+
+  <!-- amarillo -->
+  <div class="grid grid-cols-12 p-4 space-x-2 amarilloP">
+    <h1 class="col-span-10 col-start-2 py-2 font-bold text-center text-white title">Amarillo</h1>
+    <div class="col-span-10 col-start-2 py-2 ">
+      <img src="https://i.ibb.co/kh2ymfF/web-1664930555.jpg" alt="">
+    </div>
+
+    <button onclick="amarilloAcelerar()"
+      class="col-span-3 col-start-2 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600">
+      <h1>Acelerar</h1>
+    </button>
+    <button onclick="amarilloPasarNormalmente()"
+      class="col-span-4 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600">
+
+      <h1>Pasar normalmente</h1>
+    </button>
+    <button onclick="amarilloEsperar()"
+      class="col-span-3 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600">
+      <h1>Esperar</h1>
+    </button>
+
+  </div>
+
+  <div class="grid grid-cols-12 p-4 amarilloWelldone">
+
+    <h1 class="col-span-10 col-start-2 py-2 font-bold text-center text-white title ">Bien hecho!, pasaste en el momento
+      justo ✅ ¡Has ganado! 😁</h1>
+
+    <div class="col-span-10 col-start-2 py-2 ">
+      <img src="https://i.ibb.co/HpXmRPk/clapamarillo.png" alt="">
+    </div>
+
+    <button onclick="amarilloContinue()"
+      class="col-span-10 col-start-2 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600 ">
+      <h1>Continue</h1>
+    </button>
+
+  </div>
+
+  <div class="grid grid-cols-12 p-4 amarilloWrongPasarNormalmente">
+
+    <h1 class="col-span-10 col-start-2 py-2 font-bold text-center text-white title ">Oh no! No aceleraste lo suficiente
+      y te han chocado 💥 ¡Has perdido! ❌</h1>
+
+    <div class="col-span-10 col-start-2 py-2 ">
+      <img src="https://i.ibb.co/VpWHxrt/wrongamarillo.png" alt="">
+    </div>
+
+    <button onclick="amarilloContinue()"
+      class="col-span-10 col-start-2 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600 ">
+      <h1>Retry?</h1>
+    </button>
+
+    <button onclick="exitGame()"
+      class="col-span-10 col-start-2 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600 ">
+      <h1>Exit</h1>
+    </button>
+
+  </div>
+
+  <div class="grid grid-cols-12 p-4 amarilloWrongEsperar">
+
+    <h1 class="col-span-10 col-start-2 py-2 font-bold text-center text-white title ">Oh no! Creaste un bloqueo y los
+      demas conductores estan furiosos 🤬¡Has Perdido! 😞</h1>
+
+    <div class="col-span-10 col-start-2 py-2 ">
+      <img src="https://i.ibb.co/VpWHxrt/wrongamarillo.png" alt="">
+    </div>
+
+    <button onclick="amarilloContinue()"
+      class="col-span-10 col-start-2 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600 ">
+      <h1>Retry?</h1>
+    </button>
+
+    <button onclick="exitGame()"
+      class="col-span-10 col-start-2 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600 ">
+      <h1>Exit</h1>
+    </button>
+
+  </div>
+
+
+  <!-- rojo -->
+  <div class="grid grid-cols-12 p-4 space-x-2 rojoP">
+    <h1 class="col-span-10 col-start-2 py-2 font-bold text-center text-white title">Rojo</h1>
+    <div class="col-span-10 col-start-2 py-2 ">
+      <img src="https://i.ibb.co/M2XKbvg/semaforo-rojo-1024x597-1.jpg" alt="">
+    </div>
+
+    <button onclick="rojoAcelerar()"
+      class="col-span-3 col-start-2 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600">
+      <h1>Acelerar</h1>
+    </button>
+    <button onclick="rojoPasarNormalmente()"
+      class="col-span-4 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600">
+
+      <h1>Pasar normalmente</h1>
+    </button>
+    <button onclick="rojoEsperar()"
+      class="col-span-3 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600">
+      <h1>Esperar</h1>
+    </button>
+
+  </div>
+
+  <div class="grid grid-cols-12 p-4 rojoWrongAcelerar">
+
+    <h1 class="col-span-10 col-start-2 py-2 font-bold text-center text-white title ">Oh no!Cruzaste mientras autos en
+      otra direccion pasaban y chocaste 💥¡Has Perdido! ❌ 😁</h1>
+
+    <div class="col-span-10 col-start-2 py-2 ">
+      <img src="https://i.ibb.co/FmPJ15Q/wrongrojo.png" alt="">
+    </div>
+
+    <button onclick="rojoContinue()"
+      class="col-span-10 col-start-2 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600 ">
+      <h1>Retry?</h1>
+    </button>
+
+    <button onclick="exitGame()"
+      class="col-span-10 col-start-2 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600 ">
+      <h1>Exit</h1>
+    </button>
+
+  </div>
+
+  <div class="grid grid-cols-12 p-4 rojoWrongPasarNormalmente">
+
+    <h1 class="col-span-10 col-start-2 py-2 font-bold text-center text-white title ">Oh no!, Pasaste en el momento
+      indebido ❌¡Has perdido! 😞</h1>
+
+    <div class="col-span-10 col-start-2 py-2 ">
+      <img src="https://i.ibb.co/FmPJ15Q/wrongrojo.png" alt="">
+    </div>
+
+    <button onclick="rojoContinue()"
+      class="col-span-10 col-start-2 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600 ">
+      <h1>Retry?</h1>
+    </button>
+
+    <button onclick="exitGame()"
+      class="col-span-10 col-start-2 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600 ">
+      <h1>Exit</h1>
+    </button>
+
+  </div>
+
+  <div class="grid grid-cols-12 p-4 rojoWelldone">
+
+    <h1 class="col-span-10 col-start-2 py-2 font-bold text-center text-white title ">Bien hecho!, Esperaste en el
+      momento adecuado ✅\n¡Has ganado! 😁</h1>
+
+    <div class="col-span-10 col-start-2 py-2 ">
+      <img src="https://i.ibb.co/DMcJWBz/claprojo.png" alt="">
+    </div>
+
+    <button onclick="rojoContinue()"
+      class="col-span-10 col-start-2 p-4 px-4 py-2 font-bold text-center text-white bg-blue-500 rounded hover:bg-blue-600 ">
+      <h1>Continue</h1>
+    </button>
+
+  </div>
+
+
+
+
+
+</body>
+
+<script src="./javascript/semaforo.js"></script>
+
+</html>
