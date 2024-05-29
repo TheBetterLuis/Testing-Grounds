@@ -1,0 +1,1336 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YOUT TITLE HERE</title>
+    <!-- use this one for using custom variables modified in the sass folder > main.scss -->
+    <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
+    <!-- use this for using css from cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+
+<body class="text-center bg-fondo">
+
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-start bg-lighterGrey" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p></p>
+        </div>
+    </div>
+
+    <!-- Nav -->
+    <div class="container-fluid" id="nav">
+        <ul class=" text-center  list-inline row text-white align-items-center bg-Black px-2  py-xl-3 small fw-bold ">
+
+            <li class="col d-block d-xl-none c-pointer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                aria-controls="offcanvasScrolling"><i class="bi bi-list fs-1 "></i></li>
+
+
+            <li class="col  small offset-sm-4 offset-md-6 offset-xl-0 col-xl-1 hGreen c-pointer ">
+                <button class="btn-nostyle font-16px"><a href="#acerca" class="hGreen">Acerca</a></button>
+            </li>
+
+
+            <li class="col small col-xl-1 hGreen c-pointer "><button class="btn-nostyle font-16px"><a href="#mision"
+                        class="hGreen">Misión</a></button>
+            </li>
+
+            <li class="col small col-xl-1 hGreen c-pointer "><button class="btn-nostyle font-16px"><a href="#vision"
+                        class="hGreen">Visión</a></button>
+            </li>
+
+            <li class="col d-block d-xl-none"><i class="bi bi-three-dots-vertical fs-1 c-pointer" data-bs-toggle="modal"
+                    data-bs-target="#loginModal"></i></li>
+
+            <li class="col-1 d-none d-xl-block offset-6 ">
+                <select
+                    class="form-select  custom-select text-white no-border bg-darkGrey rounded-1 text-center p-0 w-50 fw-bold c-pointer font-16px"
+                    id="language">
+                    <option value="es" selected>ES</option>
+                    <option value="content">EN</option>
+                    <option value="other">FR</option>
+                </select>
+                <i class=" bi bi-chevron-compact-down position-absolute fs-5"></i>
+            </li>
+
+            <li class=" col-1 d-none d-xl-block"><button type="button" class="btn Registro fw-bold"
+                    data-bs-toggle="modal" data-bs-target="#registroModal">REGISTRO</button>
+            </li>
+
+            <li class="col-1 d-none d-xl-block hovergreen cursor-pointer">
+                <button type="button" class="btn  fw-bold hGreen " data-bs-toggle="modal"
+                    data-bs-target="#loginModal">CUENTA</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container-fluid  row small fw-bold row-gap-5">
+
+        <a href="#" onclick="selection(1,true)"
+            class="col-2  offset-1 col-sm-2 col-xl-1 offset-sm-1  offset-lg-2  offset-xl-2  iconogris seleccion" id="1">
+            <img src="https://www.tusjugadas.com/images/macuare_icon.svg" alt="" class="img-fluid">
+            <span class="d-none-xs">TODOS</span>
+        </a>
+
+        <a href="#" onclick="selection(2,true)"
+            class="col-2 offset-1  col-sm-2 col-xl-1  offset-sm-1 offset-lg-0 offset-lg-0 iconogris " id="2">
+            <img src="https://www.tusjugadas.com/images/super6.svg" alt="" class="img-fluid">
+            <span class="d-none-xs">SUPER 6</span>
+        </a>
+
+        <a href="#" onclick="selection(3,true)"
+            class="col-2 offset-1 col-sm-2 col-xl-1 offset-sm-1 offset-lg-0 iconogris " id="3">
+            <img src="https://www.tusjugadas.com/images/loteria_icon.svg" alt="" class="img-fluid">
+            <span class="d-none-xs">LOTERIAS</span>
+        </a>
+
+        <a href="#" onclick="selection(4,true)"
+            class="col-2 offset-1 col-sm-2 col-xl-1  offset-sm-1 offset-lg-0 iconogris " id="4">
+            <img src="https://www.tusjugadas.com/images/animalitos_icon.svg" alt="" class="img-fluid">
+            <span class="d-none-xs">ANIMALITOS</span>
+        </a>
+
+        <a href="#" onclick="selection(5,true)"
+            class="col-2 offset-1  col-sm-2 col-xl-1  offset-sm-1  offset-lg-2  offset-xl-0 iconogris " id="5">
+            <img src="https://www.tusjugadas.com/images/parlay_icon.svg" alt="" class="img-fluid">
+            <span class="d-none-xs">PARLAY</span>
+
+        </a>
+
+        <a href="#" onclick="selection(6,true)"
+            class="col-2 offset-1 col-sm-2 col-xl-1 offset-sm-1  offset-lg-0 iconogris " id="6">
+            <img src="https://www.tusjugadas.com/images/americanas_icon.svg" alt="" class="img-fluid">
+            <span class="d-none-xs">AMERICANAS</span>
+        </a>
+
+        <a href="#" onclick="selection(7, true)"
+            class="col-2  offset-1 col-sm-2  col-xl-1  offset-sm-1  offset-lg-0 iconogris " id="7">
+            <img src="https://www.tusjugadas.com/images/macuare_icon.svg" alt="" class="img-fluid">
+            <span class="d-none-xs">MACUARE</span>
+        </a>
+
+        <a href="#" onclick="selection(8,true)"
+            class="col-2 offset-1 col-sm-2  col-xl-1  offset-sm-1  offset-lg-0 iconogris " id="8">
+            <img src="https://www.tusjugadas.com/images/nacionales_icon.svg" alt="" class="img-fluid">
+            <span class="d-none-xs">GANADORES NACIONALES</span>
+        </a>
+
+
+    </div>
+
+    <div class="container bg-darkGrey text-white  px-5 text-start mt-5 animate__animated animate__zoomIn col-10 "
+        id="sectionTodos">
+        <h1 class="fs-6 fw-bold py-2">TODOS</h1>
+    </div>
+
+    <div id="sectionSuper6" class="animate__animated animate__zoomIn  col-10 offset-1">
+
+        <div class="border-bottom container mt-4 ">
+            <h5 class="text-start lineaVerde">SUPER 6</h5>
+        </div>
+
+        <div class="container-fluid row my-2 gap-2  ">
+            <button type="button"
+                class="botonOrange  col-3 offset-1  col-sm-2  fw-bold col-xl-1 offset-xl-2">LIVE</button>
+            <button type="button" class="botonOrange col-4 col-sm-2 fw-bold col-xl-1">PRONTO</button>
+            <button type="button" class="botonOrange  col-3 col-sm-2 fw-bold col-xl-1">HOY</button>
+        </div>
+
+        <div class=" bg-lightGrey text-white  container text-start ">
+            <h1 class="fs-6 fw-bold py-2 px-5 mb-0">SUPER 6</h1>
+        </div>
+
+        <div class="bg-white container pb-2">
+
+            <img src="https://www.tusjugadas.com/images/super6.svg" alt="" class="img-fluid col-3 my-1 d-sm-none ">
+
+            <div class="fw-bold row">
+                <span class=" offset-1 col-5 text-start">REAL MADRID</span>
+                <span class="fontGreen text-end  offset-4 col-1 offset-sm-3">4</span>
+                <span class="  offset-1 col-5 text-start">CHELSEA</span>
+                <span class="fontGreen text-end  offset-4 col-1 offset-sm-3">2</span>
+
+
+            </div>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none"
+                data-bs-toggle="modal" data-bs-target="#betModal">
+                <span class="col-10 offset-1">Real Madrid</span>
+                <span class="fw-bold col-10 offset-1">1.23</span>
+            </a>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">Draw</span>
+                <span class="fw-bold col-10 offset-1">13.00</span>
+            </a>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">Chelsea</span>
+                <span class="fw-bold col-10 offset-1">34.25</span>
+            </a>
+
+            <span class=" col-4 fw-bold fs-5 d-sm-none">+58</span>
+            <span class="col-4 d-sm-none"><i class="bi bi-chevron-compact-right"></i></span>
+
+            <div class="row d-none d-sm-block mt-2">
+
+                <button class="col-3  no-border tablaDeApuesta rounded" data-bs-toggle="modal"
+                    data-bs-target="#betModal">
+                    <span class="text-nowrap small">Real Madrid</span>
+                    <span>1.23</span>
+                </button>
+
+                <button class="col-3 no-border tablaDeApuesta rounded">
+                    <span class="small">Draw</span>
+                    <span>13.00</span>
+                </button>
+
+                <button class="col-3 no-border tablaDeApuesta rounded">
+                    <span class="small">Chelsea</span>
+                    <span>34.25</span>
+                </button>
+
+                <span class=" col-1  fw-bold ">+58</span>
+                <span class="col-1"><i class="bi bi-chevron-compact-right"></i></span>
+
+            </div>
+
+        </div>
+
+        <div class="bg-white container border-top pb-2">
+
+            <img src="https://www.tusjugadas.com/images/super6.svg" alt="" class="img-fluid col-3 my-1  d-sm-none">
+
+            <div class="fw-bold row">
+                <span class=" offset-1 col-5 text-start">ARSENAL</span>
+                <span class="fontGreen text-end  offset-4 col-1 offset-sm-3">1</span>
+                <span class="  offset-1 col-5 text-start">EVERTON</span>
+                <span class="fontGreen text-end  offset-4 col-1 offset-sm-3">0</span>
+            </div>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">Arsenal</span>
+                <span class="fw-bold col-10 offset-1">2.83</span>
+            </a>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">Draw</span>
+                <span class="fw-bold col-10 offset-1">7.00</span>
+            </a>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">Everton</span>
+                <span class="fw-bold col-10 offset-1">12.15</span>
+            </a>
+
+            <span class=" col-4 fw-bold fs-5 d-sm-none">+46</span>
+            <span class="col-4"><i class="bi bi-chevron-compact-right d-sm-none"></i></span>
+
+            <div class="row d-none d-sm-block mt-2">
+
+                <button class="col-3  no-border tablaDeApuesta rounded">
+                    <span class="text-nowrap small">Arsenal</span>
+                    <span>2.83</span>
+                </button>
+
+                <button class="col-3 no-border tablaDeApuesta rounded">
+                    <span class="small">Draw</span>
+                    <span>7.00</span>
+                </button>
+
+                <button class="col-3 no-border tablaDeApuesta rounded">
+                    <span class="small">Everton</span>
+                    <span>12.15</span>
+                </button>
+
+                <span class=" col-1  fw-bold ">+46</span>
+                <span class="col-1"><i class="bi bi-chevron-compact-right"></i></span>
+
+            </div>
+
+        </div>
+
+        <div class="bg-white container border-top pb-2">
+
+            <img src="https://www.tusjugadas.com/images/super6.svg" alt="" class="img-fluid col-3 my-1  d-sm-none">
+
+            <div class="fw-bold row">
+                <span class=" offset-1 col-5 text-start">LEICESTER CITY</span>
+                <span class="fontGreen text-end  offset-4 col-1 offset-sm-3">0</span>
+                <span class="  offset-1 col-5 text-start">ATLETICO</span>
+                <span class="fontGreen text-end  offset-4 col-1 offset-sm-3">2</span>
+            </div>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">LEICESTER CITY</span>
+                <span class="fw-bold col-10 offset-1">5.14</span>
+            </a>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">Draw</span>
+                <span class="fw-bold col-10 offset-1">9.00</span>
+            </a>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">ATLETICO</span>
+                <span class="fw-bold col-10 offset-1">27.13</span>
+            </a>
+
+            <span class=" col-4 fw-bold fs-5 d-sm-none">+32</span>
+            <span class="col-4 d-sm-none"><i class="bi bi-chevron-compact-right"></i></span>
+
+            <div class="row d-none d-sm-block mt-2">
+
+                <button class="col-3  no-border tablaDeApuesta rounded">
+                    <span class="text-nowrap small">Leicester City</span>
+                    <span>5.14</span>
+                </button>
+
+                <button class="col-3 no-border tablaDeApuesta rounded">
+                    <span class="small">Draw</span>
+                    <span>9.00</span>
+                </button>
+
+                <button class="col-3 no-border tablaDeApuesta rounded">
+                    <span class="small">Atletico</span>
+                    <span>27.13</span>
+                </button>
+
+                <span class=" col-1  fw-bold ">+32</span>
+                <span class="col-1"><i class="bi bi-chevron-compact-right"></i></span>
+
+            </div>
+
+        </div>
+
+        <div class="bg-white container border-top pb-2">
+
+            <img src="https://www.tusjugadas.com/images/super6.svg" alt="" class="img-fluid col-3 my-1  d-sm-none">
+
+            <div class="fw-bold row">
+                <span class=" offset-1 col-5 text-start">PSG</span>
+                <span class="fontGreen text-end  offset-4 col-1 offset-sm-3">1</span>
+                <span class="  offset-1 col-5 text-start">CARDIFF CITY</span>
+                <span class="fontGreen text-end  offset-4 col-1 offset-sm-3">1</span>
+            </div>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">PSG</span>
+                <span class="fw-bold col-10 offset-1">7.77</span>
+            </a>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">Draw</span>
+                <span class="fw-bold col-10 offset-1">10.00</span>
+            </a>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">CARDIFF CITY</span>
+                <span class="fw-bold col-10 offset-1">4.21</span>
+            </a>
+
+            <span class=" col-4 fw-bold fs-5 d-sm-none">+24</span>
+            <span class="col-4"><i class="bi bi-chevron-compact-right d-sm-none"></i></span>
+
+            <div class="row d-none d-sm-block mt-2">
+
+                <button class="col-3  no-border tablaDeApuesta rounded">
+                    <span class="text-nowrap small">PSG</span>
+                    <span>7.77</span>
+                </button>
+
+                <button class="col-3 no-border tablaDeApuesta rounded">
+                    <span class="small">Draw</span>
+                    <span>10.00</span>
+                </button>
+
+                <button class="col-3 no-border tablaDeApuesta rounded">
+                    <span class="small">Cardiff City</span>
+                    <span>4.21</span>
+                </button>
+
+                <span class=" col-1  fw-bold ">+24</span>
+                <span class="col-1"><i class="bi bi-chevron-compact-right"></i></span>
+
+            </div>
+
+        </div>
+
+        <div class="bg-white container border-top pb-2">
+
+            <img src="https://www.tusjugadas.com/images/super6.svg" alt="" class="img-fluid col-3 my-1  d-sm-none">
+
+            <div class="fw-bold row">
+                <span class=" offset-1 col-5 text-start">STOKE CITY</span>
+                <span class="fontGreen text-end  offset-3 col-1">1</span>
+                <span class="  offset-1 col-5 text-start">NEWCASTLE</span>
+                <span class="fontGreen text-end  offset-3 col-1">2</span>
+            </div>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">STOKE CITY</span>
+                <span class="fw-bold col-10 offset-1">3.57</span>
+            </a>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">Draw</span>
+                <span class="fw-bold col-10 offset-1">22.00</span>
+            </a>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">NEWCASTLE</span>
+                <span class="fw-bold col-10 offset-1">48.12</span>
+            </a>
+
+            <span class=" col-4 fw-bold fs-5 d-sm-none">+19</span>
+            <span class="col-4 d-sm-none"><i class="bi bi-chevron-compact-right"></i></span>
+
+            <div class="row d-none d-sm-block mt-2">
+
+                <button class="col-3  no-border tablaDeApuesta rounded">
+                    <span class="text-nowrap small">Stoke City</span>
+                    <span>3.57</span>
+                </button>
+
+                <button class="col-3 no-border tablaDeApuesta rounded">
+                    <span class="small">Draw</span>
+                    <span>22.00</span>
+                </button>
+
+                <button class="col-3 no-border tablaDeApuesta rounded">
+                    <span class="small">Newcastle</span>
+                    <span>48.12</span>
+                </button>
+
+                <span class=" col-1  fw-bold ">+19</span>
+                <span class="col-1"><i class="bi bi-chevron-compact-right"></i></span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="sectionLoterias" class="animate__animated animate__zoomIn  col-10 offset-1">
+
+        <div class="border-bottom container my-4">
+            <h5 class="text-start lineaVerde">LOTERIAS</h5>
+        </div>
+
+        <div class="container-fluid row my-2 gap-2  ">
+            <button type="button"
+                class="botonOrange  col-3 offset-1  col-sm-2  fw-bold col-xl-1 offset-xl-2">LIVE</button>
+            <button type="button" class="botonOrange col-4 col-sm-2 fw-bold col-xl-1">PRONTO</button>
+            <button type="button" class="botonOrange  col-3 col-sm-2 fw-bold col-xl-1">HOY</button>
+        </div>
+
+        <div class="bg-lightGrey text-white  container text-start">
+            <h1 class="fs-6 fw-bold py-2 mb-0">LOTERIAS</h1>
+        </div>
+
+        <div class="bg-white container pb-2">
+
+            <img src="https://www.tusjugadas.com/images/loteria_icon.svg" alt=""
+                class="img-fluid col-3 my-1  d-sm-none ">
+
+            <div class="fw-bold row ">
+                <span class=" offset-1 col-5 text-start">NEW YORK KNICKS</span>
+                <span class="fontGreen text-end  offset-4 col-1">53</span>
+                <span class="  offset-1 col-5 text-start">HOUSTON ROCKETS</span>
+                <span class="fontGreen text-end  offset-4 col-1">66</span>
+
+
+            </div>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none ">
+                <span class="col-10 offset-1">NEW YORK KNICKS</span>
+                <span class="fw-bold col-10 offset-1">2.05</span>
+            </a>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none ">
+                <span class="col-10 offset-1">HOUSTON ROCKETS</span>
+                <span class="fw-bold col-10 offset-1">1.005</span>
+            </a>
+
+            <span class=" col-4 fw-bold fs-5 d-sm-none ">+25</span>
+            <span class="col-4 d-sm-none "><i class="bi bi-chevron-compact-right"></i></span>
+
+            <div class="row d-none d-sm-block mt-2 ">
+
+                <button class="col-4  no-border tablaDeApuesta rounded">
+                    <span class="text-nowrap small">New York Knicks</span>
+                    <span>2.05</span>
+                </button>
+
+                <button class="col-4 no-border tablaDeApuesta rounded">
+                    <span class="small">Houston Rockets</span>
+                    <span>1.005</span>
+                </button>
+
+                <span class=" col-1  fw-bold ">+25</span>
+                <span class="col-1"><i class="bi bi-chevron-compact-right"></i></span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="sectionAnimalitos" class="animate__animated animate__zoomIn col-10 offset-1">
+
+        <div class="border-bottom container my-4">
+            <h5 class="text-start lineaVerde">ANIMALITOS</h5>
+        </div>
+
+        <div class="container-fluid row my-2 gap-2  ">
+            <button type="button"
+                class="botonOrange  col-3 offset-1  col-sm-2  fw-bold col-xl-1 offset-xl-2">LIVE</button>
+            <button type="button" class="botonOrange col-4 col-sm-2 fw-bold col-xl-1">PRONTO</button>
+            <button type="button" class="botonOrange  col-3 col-sm-2 fw-bold col-xl-1">HOY</button>
+        </div>
+
+        <div class="bg-lightGrey text-white  container text-start">
+            <h1 class="fs-6 fw-bold py-2 mb-0">ANIMALITOS</h1>
+        </div>
+
+        <div class="bg-white container pb-2">
+
+            <img src="https://www.tusjugadas.com/images/animalitos_icon.svg" alt=""
+                class="img-fluid col-3 my-1  d-sm-none">
+
+            <div class="fw-bold row">
+                <span class=" offset-1 col-5 text-start">FRANCIS HART</span>
+                <span class="fontGreen text-end  offset-4 col-1">3</span>
+                <span class="  offset-1 col-5 text-start">JOHN RAMSEY</span>
+                <span class="fontGreen text-end  offset-4 col-1">2</span>
+
+
+            </div>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">FRANCIS HART</span>
+                <span class="fw-bold col-10 offset-1">3.5</span>
+            </a>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">JOHN RAMSEY</span>
+                <span class="fw-bold col-10 offset-1">2.65</span>
+            </a>
+
+            <span class=" col-4 fw-bold fs-5 d-sm-none">+16</span>
+            <span class="col-4 d-sm-none"><i class="bi bi-chevron-compact-right"></i></span>
+
+            <div class="row d-none d-sm-block mt-2 ">
+
+                <button class="col-4  no-border tablaDeApuesta rounded">
+                    <span class="text-nowrap small">Francis Hart</span>
+                    <span>3.5</span>
+                </button>
+
+                <button class="col-4 no-border tablaDeApuesta rounded">
+                    <span class="small">John Ramsey</span>
+                    <span>2.65</span>
+                </button>
+
+                <span class=" col-1  fw-bold ">+16</span>
+                <span class="col-1"><i class="bi bi-chevron-compact-right"></i></span>
+
+            </div>
+
+        </div>
+
+        <div class="bg-white container border-top pb-2">
+
+            <img src="https://www.tusjugadas.com/images/animalitos_icon.svg" alt=""
+                class="img-fluid col-3 my-1 d-sm-none">
+
+            <div class="fw-bold row">
+                <span class=" offset-1 col-5 text-start">MARTHA GARCIA</span>
+                <span class="fontGreen text-end  offset-4 col-1">3</span>
+                <span class="  offset-1 col-5 text-start">LISA PETERSON</span>
+                <span class="fontGreen text-end  offset-4 col-1">2</span>
+
+
+            </div>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">MARTHA GARCIA</span>
+                <span class="fw-bold col-10 offset-1">2.60</span>
+            </a>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">LISA PETERSON</span>
+                <span class="fw-bold col-10 offset-1">1.14</span>
+            </a>
+
+            <span class=" col-4 fw-bold fs-5 d-sm-none">+32</span>
+            <span class="col-4 d-sm-none"><i class="bi bi-chevron-compact-right"></i></span>
+
+            <div class="row d-none d-sm-block mt-2 ">
+
+                <button class="col-4  no-border tablaDeApuesta rounded">
+                    <span class="text-nowrap small">Martha Garcia</span>
+                    <span>2.60</span>
+                </button>
+
+                <button class="col-4 no-border tablaDeApuesta rounded">
+                    <span class="small">Lisa Peterson</span>
+                    <span>1.14</span>
+                </button>
+
+                <span class=" col-1  fw-bold ">+32</span>
+                <span class="col-1"><i class="bi bi-chevron-compact-right"></i></span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="sectionParlay" class="animate__animated animate__zoomIn col-10 offset-1">
+
+        <div class="border-bottom container my-4">
+            <h5 class="text-start lineaVerde">PARLAY</h5>
+        </div>
+
+        <div class="container-fluid row my-2 gap-2  ">
+            <button type="button"
+                class="botonOrange  col-3 offset-1  col-sm-2  fw-bold col-xl-1 offset-xl-2">LIVE</button>
+            <button type="button" class="botonOrange col-4 col-sm-2 fw-bold col-xl-1">PRONTO</button>
+            <button type="button" class="botonOrange  col-3 col-sm-2 fw-bold col-xl-1">HOY</button>
+        </div>
+
+        <div class="bg-lightGrey text-white  container text-start">
+            <h1 class="fs-6 fw-bold py-2 mb-0">PARLAY</h1>
+        </div>
+
+        <div class="bg-white container border-bottom pb-2">
+
+            <img src="https://www.tusjugadas.com/images/parlay_icon.svg" alt="" class="img-fluid col-3 my-1  d-sm-none">
+
+            <div class="fw-bold row">
+                <span class=" offset-1 col-5 text-start">JANET ALEXANDER</span>
+                <span class="fontGreen text-end  offset-4 col-1">0</span>
+                <span class="  offset-1 col-5 text-start">CHARLES MARTIN</span>
+                <span class="fontGreen text-end  offset-4 col-1">1</span>
+
+
+            </div>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">JANET ALEXANDER</span>
+                <span class="fw-bold col-10 offset-1">1.98</span>
+            </a>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">CHARLES MARTIN</span>
+                <span class="fw-bold col-10 offset-1">3.54</span>
+            </a>
+
+            <span class=" col-4 d-sm-none fw-bold fs-5">+15</span>
+            <span class="col-4 d-sm-none"><i class="bi bi-chevron-compact-right"></i></span>
+
+            <div class="row d-none d-sm-block mt-2 ">
+
+                <button class="col-4  no-border tablaDeApuesta rounded">
+                    <span class="text-nowrap small">Janet Alexander</span>
+                    <span>1.98</span>
+                </button>
+
+                <button class="col-4 no-border tablaDeApuesta rounded">
+                    <span class="small">Charles Martin</span>
+                    <span>3.54</span>
+                </button>
+
+                <span class=" col-1  fw-bold ">+15</span>
+                <span class="col-1"><i class="bi bi-chevron-compact-right"></i></span>
+
+            </div>
+
+        </div>
+
+        <div class="bg-white container pb-2">
+
+            <img src="https://www.tusjugadas.com/images/parlay_icon.svg" alt="" class="img-fluid col-3 my-1  d-sm-none">
+
+            <div class="fw-bold row">
+                <span class=" offset-1 col-5 text-start">TERRY GONZALES</span>
+                <span class="fontGreen text-end  offset-4 col-1">1</span>
+                <span class="  offset-1 col-5 text-start">JULIE WILSON</span>
+                <span class="fontGreen text-end  offset-4 col-1">0</span>
+
+
+            </div>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">TERRY GONZALES</span>
+                <span class="fw-bold col-10 offset-1">4.05</span>
+            </a>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">JULIE WILSON</span>
+                <span class="fw-bold col-10 offset-1">1.14</span>
+            </a>
+
+            <span class=" col-4 fw-bold fs-5 d-sm-none">+65</span>
+            <span class="col-4 d-sm-none"><i class="bi bi-chevron-compact-right"></i></span>
+
+            <div class="row d-none d-sm-block mt-2 ">
+
+                <button class="col-4  no-border tablaDeApuesta rounded">
+                    <span class="text-nowrap small">Terry Gonzales</span>
+                    <span>4.05</span>
+                </button>
+
+                <button class="col-4 no-border tablaDeApuesta rounded">
+                    <span class="small">Julie Wilson</span>
+                    <span>1.14</span>
+                </button>
+
+                <span class=" col-1  fw-bold ">+65</span>
+                <span class="col-1"><i class="bi bi-chevron-compact-right"></i></span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="sectionAmericanas" class="animate__animated animate__zoomIn col-10 offset-1">
+
+        <div class="border-bottom container my-4">
+            <h5 class="text-start lineaVerde">AMERICANAS</h5>
+        </div>
+
+        <div class="container-fluid row my-2 gap-2  ">
+            <button type="button"
+                class="botonOrange  col-3 offset-1  col-sm-2  fw-bold col-xl-1 offset-xl-2">LIVE</button>
+            <button type="button" class="botonOrange col-4 col-sm-2 fw-bold col-xl-1">PRONTO</button>
+            <button type="button" class="botonOrange  col-3 col-sm-2 fw-bold col-xl-1">HOY</button>
+        </div>
+
+        <div class="bg-lightGrey text-white  container text-start">
+            <h1 class="fs-6 fw-bold py-2 mb-0">AMERICANAS</h1>
+        </div>
+
+        <div class="bg-white container border-bottom pb-2">
+
+            <img src="https://www.tusjugadas.com/images/americanas_icon.svg" alt=""
+                class="img-fluid col-3 my-1 d-sm-none">
+
+            <div class="fw-bold row">
+                <span class=" offset-1 col-5 text-start">JEFFREY CARTER</span>
+                <span class="fontGreen text-end  offset-4 col-1">0</span>
+                <span class="  offset-1 col-5 text-start">ROSE MARTINEZ</span>
+                <span class="fontGreen text-end  offset-4 col-1">0</span>
+
+
+            </div>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">JEFFREY CARTER</span>
+                <span class="fw-bold col-10 offset-1">2.10</span>
+            </a>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">ROSE MARTINEZ</span>
+                <span class="fw-bold col-10 offset-1">1.68</span>
+            </a>
+
+            <span class=" col-4 d-sm-none fw-bold fs-5">+46</span>
+            <span class="col-4 d-sm-none"><i class="bi bi-chevron-compact-right"></i></span>
+
+            <div class="row d-none d-sm-block mt-2 ">
+
+                <button class="col-4  no-border tablaDeApuesta rounded">
+                    <span class="text-nowrap small">Jeffrey Carter</span>
+                    <span>2.10</span>
+                </button>
+
+                <button class="col-4 no-border tablaDeApuesta rounded">
+                    <span class="small">Rose Martinez</span>
+                    <span>1.68</span>
+                </button>
+
+                <span class=" col-1  fw-bold ">+46</span>
+                <span class="col-1"><i class="bi bi-chevron-compact-right"></i></span>
+
+            </div>
+
+        </div>
+
+        <div class="bg-white container pb-2">
+
+            <img src="https://www.tusjugadas.com/images/americanas_icon.svg" alt=""
+                class="img-fluid col-3 my-1 d-sm-none">
+
+            <div class="fw-bold row">
+                <span class=" offset-1 col-5 text-start">TAMMY EDWARDS</span>
+                <span class="fontGreen text-end  offset-4 col-1">0</span>
+                <span class="  offset-1 col-5 text-start">SANDRA RICHARDSON</span>
+                <span class="fontGreen text-end  offset-4 col-1">14</span>
+
+
+            </div>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">TAMMY EDWARDS</span>
+                <span class="fw-bold col-10 offset-1">13.5</span>
+            </a>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">SANDRA RICHARDSON</span>
+                <span class="fw-bold col-10 offset-1">1.0005</span>
+            </a>
+
+            <span class=" col-4 d-sm-none fw-bold fs-5">+25</span>
+            <span class="col-4 d-sm-none"><i class="bi bi-chevron-compact-right"></i></span>
+
+            <div class="row d-none d-sm-block mt-2 ">
+
+                <button class="col-4  no-border tablaDeApuesta rounded">
+                    <span class="text-nowrap small">Tammy Edwards</span>
+                    <span>13.05</span>
+                </button>
+
+                <button class="col-4 no-border tablaDeApuesta rounded">
+                    <span class="small">Sandra Richardson</span>
+                    <span>1.0005</span>
+                </button>
+
+                <span class=" col-1  fw-bold ">+25</span>
+                <span class="col-1"><i class="bi bi-chevron-compact-right"></i></span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="sectionMacuare" class="animate__animated animate__zoomIn col-10 offset-1">
+
+        <div class="border-bottom container my-4">
+            <h5 class="text-start lineaVerde">MACUARE</h5>
+        </div>
+
+        <div class="container-fluid row my-2 gap-2  ">
+            <button type="button"
+                class="botonOrange  col-3 offset-1  col-sm-2  fw-bold col-xl-1 offset-xl-2">LIVE</button>
+            <button type="button" class="botonOrange col-4 col-sm-2 fw-bold col-xl-1">PRONTO</button>
+            <button type="button" class="botonOrange  col-3 col-sm-2 fw-bold col-xl-1">HOY</button>
+        </div>
+
+        <div class="bg-lightGrey text-white  container text-start">
+            <h1 class="fs-6 fw-bold py-2 mb-0">MACUARE</h1>
+        </div>
+
+        <div class="bg-white container border-bottom pb-2">
+
+            <img src="https://www.tusjugadas.com/images/macuare_icon.svg" alt=""
+                class="img-fluid col-3 my-1  d-sm-none">
+
+            <div class="fw-bold row">
+                <span class=" offset-1 col-5 text-start">ESTONIA</span>
+                <span class="fontGreen text-end  offset-4 col-1">18</span>
+                <span class="  offset-1 col-5 text-start">SLOVAKIA</span>
+                <span class="fontGreen text-end  offset-4 col-1">14</span>
+
+
+            </div>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">ESTONIA</span>
+                <span class="fw-bold col-10 offset-1">1.12</span>
+            </a>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">SLOVAKIA</span>
+                <span class="fw-bold col-10 offset-1">5.45</span>
+            </a>
+
+            <span class=" col-4 d-sm-none fw-bold fs-5">+25</span>
+            <span class="col-4 d-sm-none"><i class="bi bi-chevron-compact-right"></i></span>
+
+            <div class="row d-none d-sm-block mt-2 ">
+
+                <button class="col-4  no-border tablaDeApuesta rounded">
+                    <span class="text-nowrap small">Estonia</span>
+                    <span>1.12</span>
+                </button>
+
+                <button class="col-4 no-border tablaDeApuesta rounded">
+                    <span class="small">Slovakia</span>
+                    <span>5.45</span>
+                </button>
+
+                <span class=" col-1  fw-bold ">+25</span>
+                <span class="col-1"><i class="bi bi-chevron-compact-right"></i></span>
+
+            </div>
+
+        </div>
+
+        <div class="bg-white container pb-2">
+
+            <img src="https://www.tusjugadas.com/images/macuare_icon.svg" alt="" class="img-fluid col-3 my-1 d-sm-none">
+
+            <div class="fw-bold row">
+                <span class=" offset-1 col-5 text-start">FRANCE</span>
+                <span class="fontGreen text-end  offset-4 col-1">16</span>
+                <span class="  offset-1 col-5 text-start">SPAIN</span>
+                <span class="fontGreen text-end  offset-4 col-1">15</span>
+
+
+            </div>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">FRANCE</span>
+                <span class="fw-bold col-10 offset-1">1.25</span>
+            </a>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">SPAIN</span>
+                <span class="fw-bold col-10 offset-1">3.75</span>
+            </a>
+
+            <span class=" col-4 d-sm-none fw-bold fs-5">+51</span>
+            <span class="col-4 d-sm-none"><i class="bi bi-chevron-compact-right"></i></span>
+
+            <div class="row d-none d-sm-block mt-2 ">
+
+                <button class="col-4  no-border tablaDeApuesta rounded">
+                    <span class="text-nowrap small">France</span>
+                    <span>1.25</span>
+                </button>
+
+                <button class="col-4 no-border tablaDeApuesta rounded">
+                    <span class="small">Spain</span>
+                    <span>3.75</span>
+                </button>
+
+                <span class=" col-1  fw-bold ">+51</span>
+                <span class="col-1"><i class="bi bi-chevron-compact-right"></i></span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="sectionGanadores" class="animate__animated animate__zoomIn col-10 offset-1">
+
+        <div class="border-bottom container my-4">
+            <h5 class="text-start lineaVerde">GANADORES NACIONALES</h5>
+        </div>
+
+        <div class="container-fluid row my-2 gap-2  ">
+            <button type="button"
+                class="botonOrange  col-3 offset-1  col-sm-2  fw-bold col-xl-1 offset-xl-2">LIVE</button>
+            <button type="button" class="botonOrange col-4 col-sm-2 fw-bold col-xl-1">PRONTO</button>
+            <button type="button" class="botonOrange  col-3 col-sm-2 fw-bold col-xl-1">HOY</button>
+        </div>
+
+        <div class="bg-lightGrey text-white  container text-start">
+            <h1 class="fs-6 fw-bold py-2 mb-0">GANADORES NACIONALES</h1>
+        </div>
+
+        <div class="bg-white container border-bottom pb-2">
+
+            <img src="https://www.tusjugadas.com/images/nacionales_icon.svg" alt=""
+                class="img-fluid col-3 my-1  d-sm-none">
+
+            <div class="fw-bold row">
+                <span class=" offset-1 col-5 text-start">BUFFALO BISONS</span>
+                <span class="fontGreen text-end  offset-4 col-1">0</span>
+                <span class="  offset-1 col-5 text-start">LEHIGH VALLEY</span>
+                <span class="fontGreen text-end  offset-4 col-1">05</span>
+
+
+            </div>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">BUFFALO BISONS</span>
+                <span class="fw-bold col-10 offset-1">13.5</span>
+            </a>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">LEHIGH VALLEY IRONPIGS</span>
+                <span class="fw-bold col-10 offset-1">1.0005</span>
+            </a>
+
+            <span class=" col-4 d-sm-none fw-bold fs-5">+25</span>
+            <span class="col-4 d-sm-none"><i class="bi bi-chevron-compact-right"></i></span>
+
+            <div class="row d-none d-sm-block mt-2 ">
+
+                <button class="col-4  no-border tablaDeApuesta rounded">
+                    <span class="text-nowrap small">Buffalo Bisons</span>
+                    <span>13.5</span>
+                </button>
+
+                <button class="col-4 no-border tablaDeApuesta rounded">
+                    <span class="small">Lehigh Valley</span>
+                    <span>1.0005</span>
+                </button>
+
+                <span class=" col-1  fw-bold ">+25</span>
+                <span class="col-1"><i class="bi bi-chevron-compact-right"></i></span>
+
+            </div>
+
+        </div>
+
+        <div class="bg-white container pb-2">
+
+            <img src="https://www.tusjugadas.com/images/nacionales_icon.svg" alt=""
+                class="img-fluid col-3 my-1  d-sm-none">
+
+            <div class="fw-bold row">
+                <span class=" offset-1 col-5 text-start">SYRACUSE CHIEFS</span>
+                <span class="fontGreen text-end  offset-4 col-1">0</span>
+                <span class="  offset-1 col-5 text-start">TOLEDO MUD HENS</span>
+                <span class="fontGreen text-end  offset-4 col-1">0</span>
+
+
+            </div>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">SYRACUSE CHIEFS</span>
+                <span class="fw-bold col-10 offset-1">2.10</span>
+            </a>
+
+            <a href="#" class="col-10 bg-lighterGrey offset-1 my-2 rounded row tablaDeApuesta py-1 d-sm-none">
+                <span class="col-10 offset-1">TOLEDO MUD HENS</span>
+                <span class="fw-bold col-10 offset-1">1.68</span>
+            </a>
+
+            <span class=" col-4 d-sm-none fw-bold fs-5">+46</span>
+            <span class="col-4 d-sm-none"><i class="bi bi-chevron-compact-right"></i></span>
+
+            <div class="row d-none d-sm-block mt-2 ">
+
+                <button class="col-4  no-border tablaDeApuesta rounded">
+                    <span class="text-nowrap small">Syracuse Chiefs</span>
+                    <span>2.10</span>
+                </button>
+
+                <button class="col-4 no-border tablaDeApuesta rounded">
+                    <span class="small">Toledo Mud Hens</span>
+                    <span>1.68</span>
+                </button>
+
+                <span class=" col-1  fw-bold ">+46</span>
+                <span class="col-1"><i class="bi bi-chevron-compact-right"></i></span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Modal Login-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-Black text-white">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Iniciar Sesion</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class=" row justify-content-center">
+                        <div class="">
+                            <form>
+                                <div class="mb-2 input-group">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-person-fill"></i>
+                                    </span>
+                                    <input type="text" class="form-control focus-ring focus-ring-success"
+                                        id="usuarioField" placeholder="Usuario">
+                                    <!-- tooltip -->
+                                    <span class="input-group-text">
+                                        <span class="tt" data-bs-placement="bottom"
+                                            title="Ingresa tu usuario (ej.: nombredeusuario)">
+                                            <i class="bi bi-question-circle text-muted"></i>
+                                        </span>
+                                    </span>
+                                </div>
+
+                                <div class="mb-2 input-group">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-key-fill"></i>
+                                    </span>
+                                    <input type="password" class="form-control focus-ring focus-ring-success"
+                                        id="passwordField" placeholder="Contraseña">
+                                    <!-- tooltip -->
+                                    <span class="input-group-text">
+                                        <span class="tt" data-bs-placement="bottom" title="Mostrar contraseña">
+                                            <i class="bi bi-eye-slash" id="eyeIcon1"></i>
+                                        </span>
+                                    </span>
+                                </div>
+
+                                <div class="form-check">
+                                    <div class="ms-check">
+                                        <input class="form-check-input custom-checkbox focus-ring focus-ring-success"
+                                            type="checkbox" value="" id="Recuerdame">
+                                    </div>
+                                    <div class="row ps-1">
+                                        <label class="form-check-label text-start " for="Recuerdame">
+                                            Recuerdame
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="row text-start">
+                                    <label for="subject" class="form-label ">Moneda</label>
+                                </div>
+
+                                <div class=" input-group">
+                                    <span class="input-group-text">
+
+                                        <i class="bi bi-cash "></i>
+                                    </span>
+                                    <select class="form-select focus-ring focus-ring-success" id="subject">
+                                        <option value="Bolivares" selected ">Bs.</option>
+                                        <option value=" Dolares">$</option>
+                                    </select>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <a data-bs-target="#registroModal" data-bs-toggle="modal" class="linkFormat pb-2">Regístrate aquí</a>
+                <div class="modal-footer">
+
+                    <button type="button"
+                        class=" btn rounded-0 catSelect container-fluid  fw-bold  py-1 fs-3">Login</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Registro-->
+    <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-Black text-white">
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Registro</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class=" row justify-content-center">
+                        <div class="">
+                            <form>
+
+                                <div class="mb-2 input-group">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-person-fill"></i>
+                                    </span>
+                                    <input type="text" class="form-control focus-ring focus-ring-success"
+                                        id="usuarioField" placeholder="Usuario">
+                                    <!-- tooltip -->
+                                    <span class="input-group-text">
+                                        <span class="tt" data-bs-placement="bottom"
+                                            title="Ingresa tu usuario (ej.: nombredeusuario)">
+                                            <i class="bi bi-question-circle text-muted"></i>
+                                        </span>
+                                    </span>
+                                </div>
+
+                                <div class="mb-2 input-group">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-envelope-fill"></i>
+                                    </span>
+                                    <input type="email" class="form-control focus-ring focus-ring-success"
+                                        id="usuarioField" placeholder="Email">
+                                    <!-- tooltip -->
+                                    <span class="input-group-text">
+                                        <span class="tt" data-bs-placement="bottom"
+                                            title="Ingresa tu correo electronico (ej.: correo@ejemplo.com)">
+                                            <i class="bi bi-question-circle text-muted"></i>
+                                        </span>
+                                    </span>
+                                </div>
+
+                                <div class="mb-2 input-group">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-key-fill"></i>
+                                    </span>
+                                    <input type="password" class="form-control focus-ring focus-ring-success"
+                                        id="passwordField" placeholder="Contraseña">
+                                    <!-- tooltip -->
+                                    <span class="input-group-text">
+                                        <span class="tt" data-bs-placement="bottom" title="Mostrar contraseña">
+                                            <i class="bi bi-eye-slash" id="eyeIcon2"></i>
+                                        </span>
+                                    </span>
+                                </div>
+
+                                <div class="mb-2 input-group">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-key-fill"></i>
+                                    </span>
+                                    <input type="password" class="form-control focus-ring focus-ring-success"
+                                        id="passwordField" placeholder="Repetir contraseña">
+                                    <!-- tooltip -->
+                                    <span class="input-group-text">
+                                        <span class="tt" data-bs-placement="bottom" title="Mostrar contraseña">
+                                            <i class="bi bi-eye-slash" id="eyeIcon3"></i>
+                                        </span>
+                                    </span>
+                                </div>
+
+
+                                <div class="row text-start">
+                                    <label for="subject" class="form-label offset-1">Requisitos de contraseña</label>
+                                    <label for="subject" class="form-label offset-2">Mínimo 8 caracteres,números y
+                                        símbolos.</label>
+                                    <label for="subject" class="form-label offset-2">Combina mayúsculas, minúsculas.
+                                    </label>
+                                    <label for="subject" class="form-label offset-2">Ejemplo: P4ssw0rdS3cr3t@</label>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+                <a data-bs-target="#loginModal" data-bs-toggle="modal" class="linkFormat pb-2">Volver al inicio de
+                    sesión</a>
+                <div class="modal-footer">
+
+                    <button type="button" class=" btn rounded-0 catSelect container-fluid  fw-bold  py-1 fs-3">Crear
+                        cuenta</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Bet -->
+    <div class="modal fade" id="betModal" tabindex="-1" aria-labelledby="betModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-Black text-white">
+                    <h1 class="modal-title fs-5" id="betModalLabel">PLACING A BET</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class=" row justify-content-center">
+                        <div class="">
+                            <form>
+                                <div class="py-2 fw-bold text-start">
+                                    <span class="fontGreen ">DRAW</span><span> 9.00</span>
+                                </div>
+                                <div class="py-2 fw-bold text-start">
+                                    <span>LEICESTER CITY </span><span> VS </span><span> ATLETICO</span>
+                                </div>
+                                <div class="mb-2 input-group">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-cash "></i>
+                                    </span>
+                                    <input type="text" class="form-control focus-ring focus-ring-success"
+                                        id="usuarioField" placeholder="Ingresa Cantidad">
+                                    <!-- tooltip -->
+                                    <span class="input-group-text">
+                                        <span class="tt" data-bs-placement="bottom" title="Ingresa cantidad de apuesta">
+                                            <i class="bi bi-question-circle text-muted"></i>
+                                        </span>
+                                    </span>
+                                </div>
+
+                                <div class="py-2 fw-bold ">
+                                    <div class="text-start py-2 px-4">
+                                        <span>NUMBER OF BETS</span>
+                                        <span class=""> <span class="invisible">GGGGGGGGGGGGGGGGGGG</span>94</span>
+                                    </div>
+                                    <div class="text-start py-2 px-4">
+                                        <span>STAKE</span>
+                                        <span class=""> <span
+                                                class="invisible">GGGGGGGGGGGGGGGGGG...GGGGGGG</span>78</span>
+                                    </div>
+                                    <div class="text-start py-2 px-4">
+                                        <span>WINNINGS</span>
+                                        <span class="fontGreen "><span
+                                                class="invisible">GGG.G.GGGGGGGGGGGGGGGGGGG</span>94</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class=" btn rounded-0 catSelect container-fluid  fw-bold  py-1 fs-3">Place
+                    Bet</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <div class="py-5 container-xxl">
+        <div class="py-5 ">
+            <a href="#nav">Volver al inicio</a>
+        </div>
+        <h1 id="acerca">Acerca de TUSJUGADAS.COM</h1>
+        <p> tusjugadas.com es un sitio web de apuestas deportivas y equinas que ofrece a sus usuarios una experiencia de
+            juego segura,
+            confiable y emocionante. Con una amplia gama de mercados disponibles, cuotas competitivas y un servicio al
+            cliente de primer nivel, tusjugadas.com se ha convertido en la opción preferida para muchos
+            apostadores en Venezuela y a lo largo del mundo</p>
+        <h1 id="mision">Nuestra Misión</h1>
+        <p>Nuestra misión es brindar a nuestros usuarios una experiencia de apuestas excepcional que sea segura, justa y
+            entretenida. Nos esforzamos por ofrecer la mejor selección de mercados, las cuotas más competitivas y el
+            servicio al cliente más atento de la industria.</p>
+        <h1 id="vision">Nuestra Visión</h1>
+        <p>Aspiramos a ser el sitio web de apuestas deportivas y equinas líder en Venezuela, reconocido por nuestra
+            confiabilidad, transparencia y compromiso con la satisfacción del cliente.</p>
+    </div>
+
+
+    <a href="#" id="myBanner" data-bs-toggle="modal" data-bs-target="#loginModal"
+        class=" text-white  text-center align-content-center">
+
+        <button class=" btn rounded-0 catSelect container-fluid  fw-bold  py-1 fs-3">Iniciar
+            sesion</button>
+    </a>
+
+
+
+    <script src="./index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+body {
+    font-family: Kanit;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    /* Set your desired color here */
+}
+
+.linknoformat {
+    text-decoration: none;
+    color: none;
+}
+
+.linkFormat {
+    text-decoration: underline;
+    color: blue;
+}
+
+.linkFormatYellow {
+    text-decoration: underline;
+    color: #F2C63B;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.no-border {
+    border: 0;
+    box-shadow: none;
+}
+
+.bg-fondo {
+    background-color: #EDEFF4;
+}
+
+.bg-darkGrey {
+    background-color: #393839;
+}
+
+.bg-lightGrey {
+    background-color: #616060;
+}
+
+.bg-lighterGrey {
+    background-color: #EAEDEF;
+}
+
+.bg-Black {
+    background-color: #2B2A2B;
+}
+
+.bg-Green {
+    background-color: #64B000;
+}
+
+.Registro {
+    background-color: #64B000;
+    color: white;
+}
+
+.Registro:hover {
+    background-color: #393839;
+}
+
+.fontGreen {
+    color: #64B000;
+}
+
+
+.tablaDeApuesta:hover {
+    background-color: #64B000;
+    color: white;
+    outline: none;
+}
+
+.hGreen {
+    color: white;
+}
+
+.hGreen:hover {
+    color: #64B000;
+}
+
+.font-12px {
+    font-size: 12px;
+}
+
+.font-18px {
+    font-size: 18px;
+}
+
+#language~i {
+    color: inherit;
+    margin-left: 7px;
+    top: 19px;
+}
+
+.icon-cuenta {
+    color: inherit;
+    margin-left: -20px;
+    top: 12px;
+}
+
+.c-pointer {
+    cursor: pointer;
+}
+
+.btn-nostyle {
+    all: unset;
+}
+
+.catSelect {
+    background-color: #64B000;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.catSelect:hover {
+    background-color: #FFD03A;
+    color: black;
+    transition-delay: 0s;
+}
+
+
+
+.botonOrange {
+    background-color: #fe4e2f00;
+    border: 1px solid #E1E0E0;
+    color: rgb(0, 0, 0);
+
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 9px;
+    outline-width: medium;
+    transition-delay: 0s;
+}
+
+.botonOrange:hover {
+    background-color: #FE4F2F;
+    color: white;
+    transition-delay: 0s;
+}
+
+.botonOrange:focus {
+    background-color: #FE4F2F;
+    color: white;
+    transition-delay: 0s;
+}
+
+
+.bton {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.iconogris {
+    opacity: 0.4;
+    transition: opacity .3s ease-in-out;
+}
+
+.iconogris:hover {
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+}
+
+.seleccion {
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+}
+
+.lineaVerde {
+    position: relative;
+    padding-left: 10px;
+}
+
+.lineaVerde:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10px;
+    width: 5px;
+    background-color: #64B000;
+}
+
+.label-align-text {
+    text-align: left;
+}
+
+.ms-check {
+    margin-left: 5px;
+}
+
+#myBanner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.custom-checkbox {
+    background-color: #eee;
+    border: 1px solid #64B000;
+    width: 20px;
+    height: 20px;
+}
+
+.custom-checkbox:checked {
+    background-color: #64B000;
+}
+
+
+/* media queries for things not possible within bootstrap */
+/* below default */
+@media screen and (max-width: 575.99px) {
+    body {
+        font-size: 13px;
+    }
+
+    .d-none-xs {
+        display: none;
+    }
+}
+
+/* default styles go here */
+
+/* Small*/
+@media screen and (min-width: 576px) {}
+
+/* Medium */
+@media screen and (min-width: 768px) {}
+
+/*  Large*/
+@media screen and (min-width: 992px) {}
+
+/* X-Large */
+@media screen and (min-width: 1200px) {
+    .font-16px {
+        font-size: 16px;
+    }
+}
+
+/* XX-Large */
+@media screen and (min-width: 1400px) {}
