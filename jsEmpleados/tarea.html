@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleados</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+</head>
+
+
+<body class="bg-sky-500 flex flex-col items-center">
+    <h1 class="font-bold my-12 text-3xl">Empleados</h1>
+    <button class="px-1 py-2 mb-5 text-black bg-yellow-500 " id="buscar">Buscar empleados</button>
+    <table id="laTabla" class="hidden">
+        <!-- thead: Cabecera de la tabla (table head)-->
+        <thead class="border-2 border-solid border-black">
+            <!-- tr: Fila de la tabla (table row)-->
+            <tr class="border-2 border-solid border-black">
+                <!-- th: Celda de la tabla / Cabecera de columna (table header)-->
+                <th class="border-2 border-solid border-black px-3">Nombre</th>
+                <th class="border-2 border-solid border-black px-5">Apellido</th>
+                <th class="border-2 border-solid border-black px-5">Edad</th>
+                <th class="border-2 border-solid border-black px-5">Pais</th>
+                <th class="border-2 border-solid border-black px-5">Ciudad</th>
+                <th class="border-2 border-solid border-black px-5">Salario ($)</th>
+                <th class="border-2 border-solid border-black px-5">Codigo Empleado</th>
+            </tr>
+        </thead>
+
+        <!-- tbody: Cuerpo de la tabla (table body) -->
+        <tbody id="tbody">
+            <!-- 1tr / 2td -->
+            <!-- td: Celda de la tabla (table data) -->
+        </tbody>
+    </table>
+
+    <img id="loader" class="w-32 shake-slow shake-constant hidden"
+        src="https://img.icons8.com/?size=100&id=15854&format=png&color=000000" alt="loader">
+</body>
+<script src="./tarea.js"></script>
+
+</html>
