@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+</head>
+
+<body class="flex flex-col items-center gap-6 mt-5">
+
+
+    <button id="showProductos">Show products</button>
+
+    <!-- En este div se mostraran los usuarios despues de  -->
+    <div class="grid grid-cols-3 gap-4 place-content-center" id="productos">
+
+    </div>
+    <img id="loader" class="w-32 shake-slow shake-constant hidden"
+        src="https://img.icons8.com/?size=100&id=15854&format=png&color=000000" alt="loader">
+    <h3 id="loadingMsg" class="font-bold hidden">loading info, please wait</h3>
+
+</body>
+<script src="./tarea2.js"></script>
+
+</html>
