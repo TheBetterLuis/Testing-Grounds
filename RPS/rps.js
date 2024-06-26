@@ -35,16 +35,27 @@ gettingData();
 
 
 async function battle() {
-    let firstValue = document.getElementById('firstSelect').value;
-    let secondValue = document.getElementById('secondSelect').value;
 
-    const outcome = await fetch(`https://rps101.pythonanywhere.com/api/v1/match?object_one=${firstValue}&object_two=${secondValue}`);
+    try {
+        let firstValue = document.getElementById('firstSelect').value;
+        let secondValue = document.getElementById('secondSelect').value;
 
-    let outcomeData = await outcome.json();
+        const outcome = await fetch(`https://rps101.pythonanywhere.com/api/v1/match?object_one=${firstValue}&object_two=${secondValue}`);
 
-    console.log(outcomeData)
-    announceWinner(firstValue, secondValue, outcomeData)
-}
+        if (!outcome.ok) {
+            throw new Error(`Network response was not ok. Status: ${outcome.status}`);
+        }
+
+        let outcomeData = await outcome.json();
+
+        console.log(outcomeData)
+        announceWinner(firstValue, secondValue, outcomeData)
+
+    } catch (err) {
+        console.error('Error:', err);
+    }
+
+};
 
 const buttonBattle = document.getElementById('battle');
 buttonBattle.addEventListener('click', battle);
